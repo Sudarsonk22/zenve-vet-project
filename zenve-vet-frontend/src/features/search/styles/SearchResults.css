@@ -1,0 +1,30 @@
+.searchResults { display: flex; flex-direction: column; gap: 24px; }
+.searchCount { font-size: 13px; color: var(--zv-muted); margin: 0; }
+.searchSection > header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.searchSection h2 { font-size: 17px; font-weight: 800; }
+.searchSeeAll { border: 0; background: transparent; color: var(--zv-secondary); font: inherit; font-weight: 700; font-size: 14px; cursor: pointer; }
+.searchSeeAll:hover { text-decoration: underline; }
+.searchResultList { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.searchResultCard {
+  display: flex; align-items: center; gap: 14px; padding: 14px 16px; background: var(--zv-card); border: 1px solid var(--zv-border);
+  border-radius: var(--zv-radius); box-shadow: var(--zv-shadow); transition: border-color .15s, box-shadow .15s;
+}
+.searchResultCard:hover { border-color: var(--zv-secondary); }
+.searchResultMain { flex: 1; min-width: 0; }
+.searchResultMain h3 { font-size: 16px; line-height: 1.35; font-weight: 700; overflow-wrap: anywhere; }
+.searchResultAccent { color: var(--zv-secondary); font-weight: 600; font-size: 14px; }
+.searchResultSub { color: var(--zv-muted); font-size: 14px; }
+.searchResultSnippet { margin-top: 2px; font-size: 14px; color: var(--zv-text); overflow-wrap: anywhere; }
+.searchMetaRow { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 6px; }
+.searchMeta { display: inline-flex; align-items: center; gap: 5px; font-size: 13px; color: var(--zv-muted); }
+.searchResultActions { flex: none; display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+.searchThumb { position: relative; flex: none; width: 96px; aspect-ratio: 9 / 14; border-radius: 12px; overflow: hidden; background: #0E1A18; display: grid; place-items: center; color: #B7C9C4; }
+.searchThumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.searchThumbPlay { position: absolute; display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: rgba(14, 26, 24, .65); color: #fff; }
+.searchPagination { display: flex; align-items: center; justify-content: center; gap: 14px; font-size: 14px; color: var(--zv-muted); }
+@media (max-width: 640px) {
+  .searchResultCard { flex-wrap: wrap; align-items: flex-start; }
+  .searchResultMain { flex-basis: calc(100% - 80px); }
+  .searchResultCard.is-videos .searchResultMain { flex-basis: calc(100% - 120px); }
+  .searchResultActions { width: 100%; justify-content: flex-start; }
+}

@@ -1,0 +1,8 @@
+.searchTabs { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 4px; border-bottom: 1px solid var(--zv-border); scrollbar-width: thin; }
+.searchTabs button {
+  flex: none; min-height: 40px; padding: 0 16px; border: 0; border-bottom: 3px solid transparent; background: transparent;
+  color: var(--zv-muted); font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; white-space: nowrap; transition: color .15s, border-color .15s;
+}
+.searchTabs button:hover { color: var(--zv-primary); }
+.searchTabs button.isActive { color: var(--zv-primary); border-bottom-color: var(--zv-primary); }
+.searchTabs button:focus-visible { outline: 2px solid var(--zv-secondary); outline-offset: -2px; border-radius: 8px; }

@@ -1,0 +1,17 @@
+.globalSearchBar { display: flex; gap: 10px; }
+.globalSearchField {
+  position: relative; flex: 1; min-width: 0; display: flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 8px 0 18px;
+  background: #fff; border: 1px solid var(--zv-border); border-radius: 999px; color: var(--zv-muted); box-shadow: var(--zv-shadow);
+}
+.globalSearchField:focus-within { border-color: var(--zv-secondary); box-shadow: 0 0 0 3px rgba(42, 157, 143, .18); }
+.globalSearchField input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; font: inherit; font-size: 16px; color: var(--zv-text); }
+.globalSearchField input::-webkit-search-cancel-button { display: none; }
+.globalSearchClear { width: 34px; height: 34px; }
+.globalSearchSubmit { min-height: 52px; padding: 0 24px; }
+.globalSearchSuggestions {
+  position: absolute; top: calc(100% + 6px); left: 0; right: 0; z-index: 30; margin: 0; padding: 6px; list-style: none;
+  background: #fff; border: 1px solid var(--zv-border); border-radius: 16px; box-shadow: 0 12px 30px rgba(0, 0, 0, .12);
+}
+.globalSearchSuggestions button { display: flex; align-items: center; gap: 10px; width: 100%; padding: 9px 12px; border: 0; border-radius: 10px; background: transparent; font: inherit; font-size: 14px; color: var(--zv-text); text-align: left; cursor: pointer; }
+.globalSearchSuggestions button:hover { background: var(--zv-hover); }
+@media (max-width: 520px) { .globalSearchSubmit { padding: 0 16px; } }

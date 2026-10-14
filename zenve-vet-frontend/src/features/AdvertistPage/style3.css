@@ -1,0 +1,56 @@
+/* Deep forest green banner styling */
+.banner {
+  background-color: #083324;
+  background-image: radial-gradient(circle at top right, rgba(240, 213, 183, 0.08), transparent 60%);
+}
+
+.banner:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, rgba(8, 51, 36, 0.96) 0%, rgba(4, 35, 24, 0.7) 70%);
+  z-index: 1;
+}
+
+/* Normal state: White color, hover state: Dark gold */
+.custom-btn {
+  background-color: #ffffff;
+  color: #1c1917; /* Dark stone text */
+  border: 1px solid #e7e5e4;
+  transition: all 0.25s ease-in-out;
+}
+
+.custom-btn:hover {
+  background-color: #c59b27; /* Dark gold color */
+  color: #ffffff;
+  border-color: #b38822;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(197, 155, 39, 0.3);
+}
+/* Standalone Advertise page styles (Tailwind-independent). */
+.advertisePage { min-height:100%; padding:32px; color:#1c1917; background:#fafaf9; }
+.advertisePage > div { max-width:1200px; margin:0 auto; }
+.advertisePage .banner { position:relative; overflow:hidden; padding:48px; border-radius:24px; color:#fff; background:#083324 radial-gradient(circle at top right,rgba(240,213,183,.12),transparent 55%); box-shadow:0 18px 42px rgba(4,35,24,.18); }
+.advertisePage .banner > div:last-child { position:relative; z-index:1; max-width:1000px; }
+.advertisePage .banner p { margin:0; line-height:1.65; color:#e7ece9; }
+.advertisePage .banner h1 { margin:10px 0 14px; max-width:760px; color:#fff; font-size:clamp(30px,4vw,46px); line-height:1.15; }
+.advertisePage .banner .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; margin:30px 0; }
+.advertisePage .card { padding:20px; border:1px solid rgba(116,166,143,.32); border-radius:16px; background:rgba(2,35,24,.38); }
+.advertisePage .card h3 { margin:5px 0 7px; color:#fff; font-size:16px; }
+.advertisePage .card p { font-size:13px; color:#d3dfd9; }
+.advertisePage .banner .text-center { padding-top:18px; border-top:1px solid rgba(116,166,143,.32); text-align:center; }
+.advertisePage .banner a { color:#f0d5b7; }
+.advertisePage > div > .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; margin-top:24px; }
+.advertisePage > div > .grid > div { padding:32px; border:1px solid #e7e5e4; border-radius:22px; background:#fff; box-shadow:0 4px 18px rgba(28,25,23,.05); }
+.advertisePage h2 { margin:0 0 6px; color:#1c1917; font-size:25px; }
+.advertisePage form { margin-top:24px; }
+.advertisePage label { display:block; margin:15px 0 6px; color:#44403c; font-size:12px; font-weight:700; letter-spacing:.07em; text-transform:uppercase; }
+.advertisePage input { box-sizing:border-box; width:100%; padding:11px 13px; border:1px solid #d6d3d1; border-radius:9px; outline:0; color:#1c1917; font:inherit; }
+.advertisePage input:focus { border-color:#047857; box-shadow:0 0 0 3px rgba(4,120,87,.13); }
+.advertisePage button { width:100%; margin-top:22px; padding:12px 16px; border:1px solid #c59b27; border-radius:10px; color:#fff; background:#0b5d49; font:600 14px inherit; cursor:pointer; }
+.advertisePage button:hover { background:#c59b27; }
+@media (max-width:760px) { .advertisePage { padding:18px; } .advertisePage .banner { padding:30px 24px; } .advertisePage .banner .grid, .advertisePage > div > .grid { grid-template-columns:1fr; } }

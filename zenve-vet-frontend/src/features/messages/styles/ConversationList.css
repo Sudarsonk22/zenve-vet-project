@@ -1,0 +1,31 @@
+.conversationList { display: flex; flex-direction: column; min-height: 0; border-right: 1px solid var(--zv-border); background: #fff; }
+.conversationListHeader { padding: 18px 16px 10px; display: flex; flex-direction: column; gap: 12px; }
+.conversationListHeader h1 { font-size: 22px; font-weight: 800; line-height: 1.2; }
+.conversationListTitle { display:flex; align-items:center; justify-content:space-between; gap:10px; }.conversationListTitle button, .messageProfileForm button { border:0; border-radius:7px; padding:8px 10px; color:#fff; background:var(--zv-primary); font:700 12px inherit; cursor:pointer; }.messageProfileForm { display:grid; gap:9px; margin:0 14px 10px; padding:14px; border:1px solid var(--zv-border); border-radius:10px; background:#f7fbf9; }.messageProfileForm strong { font-size:14px; }.messageProfileForm label { display:grid; gap:4px; color:var(--zv-muted); font-size:12px; font-weight:700; }.messageProfileForm input, .messageProfileForm textarea { width:100%; border:1px solid #cfded8; border-radius:6px; padding:8px; color:var(--zv-text); background:#fff; font:400 13px inherit; resize:vertical; }.messageProfileForm button { justify-self:start; }
+.messageProfileFormActions { display:flex; gap:8px; }.messageProfileForm .messageProfileCancel { color:var(--zv-primary); background:#fff; border:1px solid #bad0c7; }
+.conversationQuickStart { display: grid; gap: 9px; }.conversationQuickStart > span { color: var(--zv-muted); font-size: 10px; font-weight: 800; letter-spacing: 1px; }.conversationQuickContacts { display: flex; gap: 13px; overflow-x: auto; padding: 2px 1px 4px; }.conversationQuickContacts button { display: grid; justify-items: center; gap: 5px; min-width: 60px; border: 0; padding: 0; color: var(--zv-text); background: transparent; font: inherit; cursor: pointer; }.conversationProfileRing { display: grid; place-items: center; width: 62px; height: 62px; padding: 3px; border-radius: 50%; background: linear-gradient(135deg, #d49a42, #d9506e 50%, #176B5B); }.conversationProfileRing .zvAvatar { overflow: hidden; border: 2px solid #fff; }.conversationQuickContacts button.isActive .conversationProfileRing { background: var(--zv-secondary); }.conversationQuickContacts small { width: 64px; overflow: hidden; font-size: 11px; text-align: center; text-overflow: ellipsis; white-space: nowrap; }.conversationQuickContacts button:hover small, .conversationQuickContacts button:focus-visible small { color: var(--zv-primary); }.conversationQuickContacts button:focus-visible { outline: 2px solid var(--zv-secondary); outline-offset: 3px; border-radius: 8px; }
+.conversationSearch { display: flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 12px; border-radius: 999px; background: #F2F6F4; border: 1px solid transparent; color: var(--zv-muted); }
+.conversationSearch:focus-within { background: #fff; border-color: var(--zv-secondary); box-shadow: 0 0 0 3px rgba(42, 157, 143, .15); }
+.conversationSearch input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; font: inherit; font-size: 14px; color: var(--zv-text); }
+.conversationFilters { display: flex; gap: 6px; overflow-x: auto; }
+.conversationFilters button { flex: none; min-height: 32px; padding: 0 12px; border-radius: 999px; border: 1px solid var(--zv-border); background: #fff; color: var(--zv-muted); font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; }
+.conversationFilters button:hover { background: var(--zv-hover); color: var(--zv-primary); }
+.conversationFilters button.isActive { background: var(--zv-primary); border-color: var(--zv-primary); color: #fff; }
+.conversationFilters button:focus-visible { outline: 2px solid var(--zv-secondary); outline-offset: 2px; }
+.conversationListBody { flex: 1; overflow-y: auto; min-height: 0; padding: 4px 8px 12px; }
+.conversationItems { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
+.conversationItem { display: flex; align-items: center; gap: 12px; width: 100%; padding: 10px 10px; border: 0; border-radius: 14px; background: transparent; text-align: left; font: inherit; color: inherit; cursor: pointer; transition: background-color .15s; }
+.conversationItem:hover { background: #F2F6F4; }
+.conversationItem.isActive { background: var(--zv-hover); }
+.conversationItem:focus-visible { outline: 2px solid var(--zv-secondary); outline-offset: -2px; }
+.conversationItemText { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.conversationItemText > strong { font-size: 15px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.conversationPeopleLabel { margin: 10px 8px 6px; color: var(--zv-muted); font-size: 10px; font-weight: 800; letter-spacing: 1px; }.conversationItems { gap: 5px; }.conversationItem { padding: 11px 12px; border-radius:10px; }.conversationItem.isActive { background:#e5f1ed; }.conversationListHeader { padding:16px 14px 9px; }
+.conversationItemTop, .conversationItemBottom { display: flex; align-items: center; gap: 8px; justify-content: space-between; }
+.conversationItemTop strong { font-size: 15px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.conversationItemTop time { flex: none; font-size: 12px; color: var(--zv-muted); }
+.conversationItemPreview { flex: 1; min-width: 0; font-size: 13px; color: var(--zv-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.conversationItem.isUnread .conversationItemPreview { color: var(--zv-text); font-weight: 600; }
+.conversationItem.isUnread .conversationItemTop time { color: var(--zv-primary); font-weight: 700; }
+.conversationItemPin { flex: none; color: var(--zv-muted); }
+.conversationItemBadge { flex: none; min-width: 20px; height: 20px; padding: 0 6px; border-radius: 999px; background: var(--zv-primary); color: #fff; font-size: 11px; font-weight: 700; display: inline-grid; place-items: center; }

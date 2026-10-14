@@ -1,0 +1,52 @@
+.messagesPage {
+  --zv-primary: #176B5B; --zv-secondary: #2A9D8F; --zv-bg: #F7F9F7; --zv-card: #FFFFFF;
+  --zv-text: #263238; --zv-muted: #718096; --zv-border: #E5EAE8; --zv-hover: #DDF3ED;
+  --zv-success: #22A06B; --zv-warning: #F4B942; --zv-error: #D9534F;
+  --zv-radius: 16px; --zv-shadow: 0 1px 2px rgba(23, 107, 91, .06), 0 6px 20px rgba(23, 107, 91, .07);
+  color-scheme: light; box-sizing: border-box; width: 100%; background: var(--zv-bg); color: var(--zv-text);
+  text-align: left; letter-spacing: 0; font: 400 15px/1.5 system-ui, 'Segoe UI', Roboto, sans-serif; padding: 16px;
+}
+.messagesPage *, .messagesPage *::before, .messagesPage *::after { box-sizing: border-box; }
+.messagesPage h1, .messagesPage h2, .messagesPage h3 { font-family: inherit; color: var(--zv-text); letter-spacing: 0; margin: 0; }
+.messagesLayout {
+  position: relative; display: grid; grid-template-columns: 320px minmax(0, 1fr) 300px; height: calc(100vh - 96px); min-height: 520px;
+  max-width: 1400px; margin: 0 auto; background: var(--zv-card); border: 1px solid var(--zv-border); border-radius: 20px; box-shadow: var(--zv-shadow); overflow: hidden;
+}
+
+/* Right-hand contact panel */
+.contactPanel { border-left: 1px solid var(--zv-border); padding: 24px 20px; overflow-y: auto; background: #FBFCFB; }
+.contactPanelClose { display: none; position: absolute; top: 10px; right: 10px; }
+.contactPanelHead { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; margin-bottom: 16px; }
+.contactPanelHead h2 { font-size: 18px; font-weight: 800; margin-top: 8px; }
+.contactPanelSub { color: var(--zv-secondary); font-weight: 600; font-size: 14px; }
+.contactPanelList { list-style: none; margin: 0 0 12px; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.contactPanelList li { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; color: var(--zv-text); }
+.contactPanelList svg { flex: none; margin-top: 2px; color: var(--zv-muted); }
+.contactPanelBio { font-size: 14px; color: var(--zv-muted); line-height: 1.55; margin-bottom: 16px; overflow-wrap: anywhere; }
+.contactPanelActions { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; }
+
+/* Tablet: drop the profile panel into a slide-over */
+@media (max-width: 1100px) {
+  .messagesLayout { grid-template-columns: 280px minmax(0, 1fr); }
+  .contactPanel { display: none; }
+  .contactPanel.isOpen { display: block; position: absolute; z-index: 20; top: 0; right: 0; bottom: 0; width: min(320px, 100%); box-shadow: -12px 0 30px rgba(0, 0, 0, .12); }
+  .contactPanelClose { display: grid; }
+}
+
+/* Mobile: list and chat are separate views */
+@media (max-width: 760px) {
+  .messagesPage { padding: 0; }
+  .messagesLayout { grid-template-columns: minmax(0, 1fr); height: calc(100vh - 64px); border-radius: 0; border-width: 1px 0; }
+  .messagesPage:not(.hasSelection) .chatWindow { display: none; }
+  .messagesPage.hasSelection .conversationList { display: none; }
+}
+
+/* Two-panel, card-based conversation layout. */
+.messagesPage { --zv-bg: transparent; padding:14px; background: transparent; }
+.messagesLayout { grid-template-columns:300px minmax(0,1fr); gap:12px; max-width:1180px; border:0; border-radius:0; background:transparent; box-shadow:none; overflow:visible; }
+.conversationList, .chatWindow { overflow:hidden; border:1px solid #ead9d9; border-radius:12px; box-shadow:0 4px 13px rgba(92,50,50,.14); }
+.conversationList { border-right:1px solid #ead9d9; }
+.chatWindow { background:#fff; }
+.contactPanel { display:none; }
+.contactPanel.isOpen { display:block; position:absolute; z-index:20; top:0; right:0; bottom:0; width:min(320px,100%); box-shadow:-12px 0 30px rgba(0,0,0,.12); }
+@media(max-width:760px){.messagesPage{padding:0}.messagesLayout{grid-template-columns:minmax(0,1fr);gap:0}.conversationList,.chatWindow{border-radius:0;box-shadow:none}.contactPanel.isOpen{position:fixed;top:0;bottom:0}}

@@ -1,0 +1,12 @@
+.searchFilters { background: #fff; border: 1px solid var(--zv-border); border-radius: var(--zv-radius); padding: 12px; }
+.searchFiltersBody { display: none; flex-direction: column; gap: 12px; margin-top: 12px; }
+.searchFilters.isOpen .searchFiltersBody { display: flex; }
+.searchFilterField { display: flex; flex-direction: column; gap: 4px; }
+.searchFilterField label { font-size: 13px; font-weight: 700; }
+.searchFilterField select, .searchFilterField input { width: 100%; min-height: 40px; padding: 8px 12px; border: 1px solid var(--zv-border); border-radius: 12px; background: #fff; font: inherit; font-size: 14px; color: var(--zv-text); }
+.searchFilterField select:focus, .searchFilterField input:focus { outline: 0; border-color: var(--zv-secondary); box-shadow: 0 0 0 3px rgba(42, 157, 143, .15); }
+@media (min-width: 900px) {
+  .searchFilters { position: sticky; top: 16px; }
+  .searchFiltersToggle { display: none; }
+  .searchFiltersBody { display: flex; margin-top: 0; }
+}
