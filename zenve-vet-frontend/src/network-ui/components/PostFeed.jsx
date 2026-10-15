@@ -10,12 +10,12 @@ const tabs = [
   ['following', 'Following'],
 ];
 
-export default function PostFeed({ type }) {
+export default function PostFeed({ type, initialType }) {
   const meId = getMeId();
   const [tab, setTab] = useState('for-you');
   const [specialty, setSpecialty] = useState('');
   const [state, setState] = useState('');
-  const [typeFilter, setTypeFilter] = useState('');
+  const [typeFilter, setTypeFilter] = useState(initialType || '');
   const [specialties, setSpecialties] = useState([]);
   const [states, setStates] = useState([]);
   const [posts, setPosts] = useState([]);

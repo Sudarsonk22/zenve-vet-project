@@ -1,0 +1,69 @@
+.pk-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 24px;
+  text-align: left;
+}
+
+.pk-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.pk-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.pk-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: #10211a;
+  line-height: 1.2;
+}
+
+.pk-specialty {
+  font-size: 11px;
+  color: #6b766f;
+  line-height: 1.2;
+}
+
+.pk-city {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  font-style: normal;
+  color: #6b766f;
+  line-height: 1.2;
+}
+
+.pk-plus {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #e3e4de;
+  background: #fff;
+  color: #26352d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.pk-plus:hover {
+  background: #f3f1e8;
+}

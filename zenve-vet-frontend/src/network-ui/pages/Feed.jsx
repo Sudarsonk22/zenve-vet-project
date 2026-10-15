@@ -3,7 +3,7 @@ import StoriesRow from '../components/StoriesRow';
 import PostFeed from '../components/PostFeed';
 import FeedRail from '../components/FeedRail';
 
-export default function Feed({ onExplore, onCreate }) {
+export default function Feed({ onExplore, onCreate, initialType }) {
   return (
     <main className="main-content">
       <div className="feed-layout">
@@ -28,7 +28,7 @@ export default function Feed({ onExplore, onCreate }) {
           </section>
 
           <StoriesRow />
-          <PostFeed />
+          <PostFeed initialType={initialType} />
         </div>
 
         <FeedRail onCreate={onCreate} onExplore={onExplore} />

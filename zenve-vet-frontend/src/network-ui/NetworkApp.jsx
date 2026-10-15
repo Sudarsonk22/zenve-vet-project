@@ -21,7 +21,6 @@ import {
 } from '../features/profiles/pages/ProfessionalPages';
 import SearchDiscover from './pages/SearchDiscover';
 import SavedVideosPage from '../features/shortvideos/pages/SavedVideosPage';
-import ShortVideosPage from '../features/shortvideos/pages/ShortVideosPage';
 import WatchHistoryPage from '../features/shortvideos/pages/WatchHistoryPage';
 import TeamReviewPage from '../features/team/TeamReviewPage';
 
@@ -137,11 +136,17 @@ export default function NetworkApp() {
         query={globalQuery}
         setQuery={setGlobalQuery}
         onMenu={() => setMobileOpen(true)}
+        onSearch={() => navigate(appRoutes.search)}
+        onSelectDoctor={doctor => {
+          setGlobalQuery('');
+          navigate('/profile/' + doctor.slug);
+        }}
       />
       <div className="app-layout">
         <Sidebar
           active={active}
           onNavigate={go}
+          onCreate={() => setModal(true)}
           open={mobileOpen}
           onClose={() => setMobileOpen(false)}
         />
@@ -157,7 +162,17 @@ export default function NetworkApp() {
             path="/profile/:slug"
             element={<ProfilePage onBack={back} onConnect={connect} refreshKey={refreshKey} />}
           />
-          <Route path={appRoutes.shortVideos} element={<ShortVideosPage />} />
+          <Route
+            path={appRoutes.shortVideos}
+            element={
+              <Feed
+                key="videos"
+                initialType="SHORT_VIDEO"
+                onExplore={() => go('Vet network')}
+                onCreate={() => setModal(true)}
+              />
+            }
+          />
           <Route path={appRoutes.savedVideos} element={<SavedVideosPage />} />
           <Route path={appRoutes.watchHistory} element={<WatchHistoryPage />} />
           <Route path={appRoutes.messages} element={<MessagesPage />} />

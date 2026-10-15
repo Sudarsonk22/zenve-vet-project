@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowUpRight, ChevronRight, Globe, MapPin, Plus, Sparkles, Users } from 'lucide-react';
 import { getVets, follow, getMeId } from '../api';
+import './peopleToKnow.css';
 
 export default function FeedRail({ onCreate, onExplore }) {
   const navigate = useNavigate();
@@ -36,16 +37,16 @@ export default function FeedRail({ onCreate, onExplore }) {
       {people.length === 0 && <p className="zv-rail-empty">You are following everyone for now.</p>}
 
       {people.map(vet => (
-        <div className="zv-person" key={vet.id}>
-          <img src={vet.image} alt="" onClick={() => navigate('/profile/' + vet.slug)} />
-          <div className="zv-person-info" onClick={() => navigate('/profile/' + vet.slug)}>
-            <b>{vet.name}</b>
-            <small>{vet.specialty}</small>
-            <em>
+        <div className="pk-row" key={vet.id}>
+          <img className="pk-photo" src={vet.image} alt="" onClick={() => navigate('/profile/' + vet.slug)} />
+          <div className="pk-info" onClick={() => navigate('/profile/' + vet.slug)}>
+            <span className="pk-name">{vet.name}</span>
+            <span className="pk-specialty">{vet.specialty}</span>
+            <span className="pk-city">
               <MapPin size={11} /> {vet.city}
-            </em>
+            </span>
           </div>
-          <button className="zv-plus" aria-label={'Follow ' + vet.name} onClick={() => addPerson(vet)}>
+          <button className="pk-plus" aria-label={'Follow ' + vet.name} onClick={() => addPerson(vet)}>
             <Plus size={14} />
           </button>
         </div>

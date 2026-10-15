@@ -13,6 +13,7 @@ import {
   reportPost,
   getMeId,
   DEFAULT_IMAGE,
+  mediaSrc,
 } from '../api';
 
 function timeAgo(date) {
@@ -21,6 +22,54 @@ function timeAgo(date) {
   if (seconds < 3600) return Math.floor(seconds / 60) + ' min ago';
   if (seconds < 86400) return Math.floor(seconds / 3600) + ' hr ago';
   return Math.floor(seconds / 86400) + ' days ago';
+}
+
+function youtubeId(url) {
+  const match = url.match(
+    /(?:youtube\.com\/(?:watch\?(?:.*&)?v=|shorts\/|embed\/|live\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/
+  );
+  return match ? match[1] : null;
+}
+
+function isVideoFile(url) {
+  return /\.(mp4|webm|ogg|mov|m4v)(\?.*)?$/i.test(url);
+}
+
+function Media({ url }) {
+  const id = youtubeId(url);
+
+  if (id) {
+    return (
+      <iframe
+        className="post-image"
+        src={'https://www.youtube.com/embed/' + id}
+        title="YouTube video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        style={{ width: '100%', aspectRatio: '16 / 9', border: 0 }}
+      />
+    );
+  }
+
+  if (isVideoFile(url)) {
+    return (
+      <video
+        className="post-image"
+        src={mediaSrc(url)}
+        controls
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          width: 'auto',
+          maxWidth: '100%',
+          maxHeight: 520,
+          objectFit: 'contain',
+        }}
+      />
+    );
+  }
+
+  return <img className="post-image" src={mediaSrc(url)} alt="" />;
 }
 
 export default function PostCard({ post: first }) {
@@ -116,12 +165,7 @@ export default function PostCard({ post: first }) {
       {post.category && <span className="eyebrow gold-eyebrow">{post.category}</span>}
       <p>{post.body}</p>
 
-      {post.mediaUrl &&
-        (post.type === 'SHORT_VIDEO' ? (
-          <video className="post-image" src={post.mediaUrl} controls />
-        ) : (
-          <img className="post-image" src={post.mediaUrl} alt="" />
-        ))}
+      {post.mediaUrl && <Media url={post.mediaUrl} />}
 
       {post.type === 'CLINICAL_CASE' && post.consentReviewed && (
         <p className="zv-note">Consent reviewed · De-identified for peer discussion</p>

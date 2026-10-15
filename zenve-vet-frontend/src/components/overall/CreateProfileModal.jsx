@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { X, ArrowUpRight } from 'lucide-react';
-import './createProfileModal.css';
+
 
 const empty = { name: '', city: '', specialty: '', about: '' };
 

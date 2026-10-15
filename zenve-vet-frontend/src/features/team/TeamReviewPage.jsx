@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './teamReview.css';
+import logo from '../../assets/zenve-vet-logo.png';
 
 const API = 'http://localhost:8080/api';
 const TOKEN_STORAGE = 'zenve-team-token';
@@ -45,10 +46,17 @@ const tabs = [
 function Header({ email, onSignOut }) {
   return (
     <header className="tr-header">
-      <h1 className="tr-brand">
-        ZENVE VET ·<br />
-        TEAM REVIEW
-      </h1>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+        <img
+          src={logo}
+          alt="Zenve Vet"
+          style={{ width: 56, height: 56, objectFit: 'contain', flexShrink: 0 }}
+        />
+        <h1 className="tr-brand" style={{ margin: 0, textAlign: 'left' }}>
+          ZENVE VET ·<br />
+          TEAM REVIEW
+        </h1>
+      </div>
       {email && (
         <div className="tr-user">
           <span>{email}</span>

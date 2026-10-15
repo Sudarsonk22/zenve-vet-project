@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { ArrowUpRight, BriefcaseMedical, CirclePlus, ImagePlus, Sparkles, Stethoscope, Video } from 'lucide-react';
-import { createPost, getMeId } from '../api';
+import { useRef, useState } from 'react';
+import { ArrowUpRight, BriefcaseMedical, CirclePlus, ImagePlus, Stethoscope, Video, X } from 'lucide-react';
+import { createPost, uploadMedia, getMeId } from '../api';
 
 const kinds = [
   { value: 'POST', label: 'Photo / Post', icon: ImagePlus },
@@ -16,32 +16,43 @@ const defaultCategory = {
   SHORT_VIDEO: 'Learning',
 };
 
+const VIDEO_TYPES = 'video/mp4,video/webm,video/quicktime,video/x-m4v';
+const IMAGE_TYPES = 'image/jpeg,image/png,image/webp';
+const MAX_MB = Number(import.meta.env.VITE_MAX_VIDEO_MB) || 50;
+
 export default function PostComposer({ fixedType, onPosted }) {
   const start = fixedType || 'POST';
+  const fileInput = useRef(null);
   const [kind, setKind] = useState(start);
   const [category, setCategory] = useState(defaultCategory[start]);
   const [body, setBody] = useState('');
-  const [mediaUrl, setMediaUrl] = useState('');
+  const [file, setFile] = useState(null);
+  const [link, setLink] = useState('');
   const [consent, setConsent] = useState(false);
   const [error, setError] = useState('');
-  const [notice, setNotice] = useState('');
   const [busy, setBusy] = useState(false);
 
   const showMore = body.trim() !== '' || kind === 'SHORT_VIDEO' || kind === 'CLINICAL_CASE';
+  const accept = kind === 'SHORT_VIDEO' ? VIDEO_TYPES : IMAGE_TYPES + ',' + VIDEO_TYPES;
+  const chooseLabel = kind === 'SHORT_VIDEO' ? 'Choose video' : 'Choose photo or video';
 
   const chooseKind = value => {
     setKind(value);
     setCategory(defaultCategory[value]);
     setError('');
-    setNotice('');
   };
 
-  const mediaPlaceholder =
-    kind === 'SHORT_VIDEO'
-      ? 'Video link (required)'
-      : kind === 'CLINICAL_CASE'
-      ? 'Photo link (optional)'
-      : 'Photo or video link (optional)';
+  const pickFile = e => {
+    const picked = e.target.files[0];
+    e.target.value = '';
+    if (!picked) return;
+    if (picked.size > MAX_MB * 1024 * 1024) {
+      setError('That file is larger than ' + MAX_MB + ' MB.');
+      return;
+    }
+    setError('');
+    setFile(picked);
+  };
 
   const submit = async e => {
     e.preventDefault();
@@ -49,22 +60,30 @@ export default function PostComposer({ fixedType, onPosted }) {
       setError('Write something first.');
       return;
     }
+    if (kind === 'SHORT_VIDEO' && !file && !link.trim()) {
+      setError('Choose a video to upload.');
+      return;
+    }
     setBusy(true);
     try {
+      let mediaUrl = link.trim();
+      if (file) {
+        mediaUrl = await uploadMedia(file);
+      }
       await createPost({
         authorId: getMeId(),
         type: kind,
         category,
         body,
-        mediaUrl: mediaUrl.trim() || null,
+        mediaUrl: mediaUrl || null,
         consentReviewed: consent,
       });
       setBody('');
-      setMediaUrl('');
+      setFile(null);
+      setLink('');
       setConsent(false);
       setCategory(defaultCategory[kind]);
       setError('');
-      setNotice('');
       onPosted();
     } catch (err) {
       setError(err.message);
@@ -98,12 +117,42 @@ export default function PostComposer({ fixedType, onPosted }) {
             onChange={e => setCategory(e.target.value)}
             placeholder="Category"
           />
+
           <input
-            type="text"
-            value={mediaUrl}
-            onChange={e => setMediaUrl(e.target.value)}
-            placeholder={mediaPlaceholder}
+            ref={fileInput}
+            type="file"
+            accept={accept}
+            onChange={pickFile}
+            style={{ display: 'none' }}
           />
+
+          {file ? (
+            <div className="zv-kind zv-kind-active" style={{ justifyContent: 'space-between' }}>
+              <span>{file.name}</span>
+              <button
+                type="button"
+                aria-label="Remove file"
+                onClick={() => setFile(null)}
+                style={{ border: 0, background: 'transparent', display: 'flex' }}
+              >
+                <X size={15} />
+              </button>
+            </div>
+          ) : (
+            <button type="button" className="zv-kind" onClick={() => fileInput.current.click()}>
+              <ImagePlus size={15} /> {chooseLabel}
+            </button>
+          )}
+
+          {!file && (
+            <input
+              type="text"
+              value={link}
+              onChange={e => setLink(e.target.value)}
+              placeholder="Or paste a YouTube or photo link (optional)"
+            />
+          )}
+
           {kind === 'CLINICAL_CASE' && (
             <label className="zv-check">
               <input type="checkbox" checked={consent} onChange={e => setConsent(e.target.checked)} />
@@ -114,7 +163,6 @@ export default function PostComposer({ fixedType, onPosted }) {
       )}
 
       {error && <p className="form-error zv-composer-note">{error}</p>}
-      {notice && <p className="zv-composer-note zv-notice">{notice}</p>}
 
       <div className="zv-composer-bar">
         <div className="zv-kinds">
@@ -133,13 +181,6 @@ export default function PostComposer({ fixedType, onPosted }) {
                 </button>
               );
             })}
-          <button
-            type="button"
-            className="zv-kind zv-kind-ai"
-            onClick={() => setNotice('The AI case assistant is coming soon.')}
-          >
-            <Sparkles size={15} /> AI case assistant
-          </button>
         </div>
         <button className="zv-post-button" type="submit" disabled={busy}>
           {busy ? 'Posting...' : 'Post'} <ArrowUpRight size={15} />

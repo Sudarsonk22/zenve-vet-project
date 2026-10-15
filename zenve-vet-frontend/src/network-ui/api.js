@@ -216,3 +216,29 @@ export function getSearchTopics() {
 export function getStories() {
   return request('/posts/stories');
 }
+
+// media
+const ORIGIN = BASE.replace(/\/api$/, '');
+
+export function mediaSrc(url) {
+  if (!url) return '';
+  return /^(https?:|blob:|data:)/i.test(url) ? url : ORIGIN + url;
+}
+
+export async function uploadMedia(file) {
+  const form = new FormData();
+  form.append('file', file);
+
+  let response;
+  try {
+    response = await fetch(BASE + '/posts/media', { method: 'POST', body: form });
+  } catch {
+    throw new Error('Cannot reach the server. Is the backend running?');
+  }
+
+  const data = await response.json().catch(() => null);
+  if (!response.ok) {
+    throw new Error(data?.message || 'Upload failed');
+  }
+  return data.url;
+}
