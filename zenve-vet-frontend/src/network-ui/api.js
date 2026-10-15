@@ -89,7 +89,7 @@ function mapVet(v) {
 
 // vets
 export async function getVets(viewerId) {
-  const page = await request('/vets' + query({ size: 50, viewerId }));
+  const page = await request('/vets' + query({ size: 100, viewerId }));
   return page.items.map(mapVet);
 }
 
@@ -188,6 +188,29 @@ export function reportPost(postId, reporterId, reason, details) {
     method: 'POST',
     body: JSON.stringify({ reporterId, reason, details }),
   });
+}
+
+// search
+/**
+ * One call behind the whole Discover page.
+ *
+ * Doctors come back through `mapVet` so `ProfileCard` can render them unchanged,
+ * while posts are left in their server shape because that is exactly what
+ * `PostCard` already consumes - neither card needed a second mapping path.
+ */
+export async function searchAll({ q, topic, state, verifiedOnly, hasTakeaways, tab, page, size, viewerId }) {
+  const data = await request('/search' + query({
+    q, topic, state, verifiedOnly, hasTakeaways, tab, page, size, viewerId,
+  }));
+  return {
+    ...data,
+    doctors: (data.doctors || []).map(mapVet),
+    posts: data.posts || [],
+  };
+}
+
+export function getSearchTopics() {
+  return request('/search/topics');
 }
 
 export function getStories() {

@@ -4,6 +4,7 @@ import Avatar from '../../../components/common/Avatar';
 import Icon from '../../../components/common/Icon';
 import { appRoutes } from '../../../config/appRoutes';
 import { sampleSearch, sampleVideos, suggestedPeople } from '../../../data/sampleData';
+import { createVet, setMeId } from '../../../network-ui/api';
 import '../../shortvideos/styles/CommunityWidgets.css';
 
 const ownProfileKey = 'zenve-professional-profile';
@@ -57,7 +58,45 @@ export function CreateProfessionalPage() {
   const [values, setValues] = useState({ name: '', city: '', specialization: '', about: '' });
   const [showForm, setShowForm] = useState(false);
   const navigate = useNavigate();
-  const submit = (e) => { e.preventDefault(); const profile = { ...values, id: 'my-professional-page', avatarUrl: '', following: false }; localStorage.setItem(ownProfileKey, JSON.stringify(profile)); navigate(appRoutes.profile(profile.id)); };
+  const [saving, setSaving] = useState(false);
+  const [error, setError] = useState('');
+
+  /**
+   * Creates the page on the backend.
+   *
+   * It used to write a single localStorage record under a fixed id, which meant
+   * the page existed only in that one browser, nobody else could open it, and a
+   * second profile overwrote the first. It is a real vet_profiles row now, so it
+   * appears in the network, in search, and can be messaged.
+   */
+  const submit = async (e) => {
+    e.preventDefault();
+    if (saving) return;
+    setSaving(true);
+    setError('');
+
+    // The form collects one "City" field, but the backend keeps city and state
+    // apart so the state filter works. "Kochi, Kerala" splits; a bare city does not.
+    const [city, state] = values.city.split(',').map((part) => part.trim());
+
+    try {
+      const vet = await createVet({
+        fullName: values.name.trim(),
+        specialty: values.specialization.trim(),
+        city: city || values.city.trim(),
+        state: state || '',
+        bio: values.about.trim(),
+        avatarUrl: '',
+      });
+      // Whoever just made a page is now the viewer, so the rest of the app
+      // (follows, messages, liked state) acts as them.
+      setMeId(vet.id);
+      navigate(appRoutes.profile(vet.slug));
+    } catch (err) {
+      setError(err.message || 'Your page could not be created. Please try again.');
+      setSaving(false);
+    }
+  };
   const benefits = [
     ['user', 'A page that is entirely you', 'A shareable professional presence with your story, specialty, clinical journal and community contributions.'],
     ['users', 'Peers beyond your postcode', 'Discover doctors across India, make connections and bring new perspectives into your practice.'],
@@ -66,7 +105,7 @@ export function CreateProfessionalPage() {
     ['sparkles', 'Ideas with a future', 'Exchange ideas, find mentors and turn professional curiosity into meaningful work.'],
     ['clipboard', 'Room to grow', 'Build a body of work that grows with every case, contribution and connection.'],
   ];
-  return <div className="membershipPage"><Link className="profileBack" to={appRoutes.shortVideos}><Icon name="back" size={16} /> Back to community</Link><header><p className="profileLabel">FOR VETERINARY PROFESSIONALS</p><h1>Space for your work.<br />Support for your ambition.</h1><p>â‚¹0 membership Â· No login required</p></header><div className="membershipGrid">{benefits.map(([icon, title, text]) => <article key={title}><Icon name={icon} size={31} /><h2>{title}</h2><p>{text}</p></article>)}</div><div className="membershipAction"><button type="button" className="createPageBtn" onClick={() => setShowForm(true)}>Create your professional page <Icon name="chevronRight" size={17} /></button></div>{showForm && <form className="professionalForm" onSubmit={submit}><p className="profileLabel">YOUR PROFESSIONAL PAGE</p><h2>Tell the community about you</h2>{[['name', 'Your name'], ['city', 'City'], ['specialization', 'Specialty']].map(([name, label]) => <label key={name}>{label}<input required value={values[name]} onChange={(e) => setValues({ ...values, [name]: e.target.value })} placeholder={label} /></label>)}<label>About<textarea required value={values.about} onChange={(e) => setValues({ ...values, about: e.target.value })} placeholder="Tell the community about your work" rows="4" /></label><button className="createPageBtn" type="submit">Create professional page <Icon name="chevronRight" size={17} /></button></form>}</div>;
+  return <div className="membershipPage"><Link className="profileBack" to={appRoutes.shortVideos}><Icon name="back" size={16} /> Back to community</Link><header><p className="profileLabel">FOR VETERINARY PROFESSIONALS</p><h1>Space for your work.<br />Support for your ambition.</h1><p>â‚¹0 membership Â· No login required</p></header><div className="membershipGrid">{benefits.map(([icon, title, text]) => <article key={title}><Icon name={icon} size={31} /><h2>{title}</h2><p>{text}</p></article>)}</div><div className="membershipAction"><button type="button" className="createPageBtn" onClick={() => setShowForm(true)}>Create your professional page <Icon name="chevronRight" size={17} /></button></div>{showForm && <form className="professionalForm" onSubmit={submit}><p className="profileLabel">YOUR PROFESSIONAL PAGE</p><h2>Tell the community about you</h2>{[['name', 'Your name'], ['city', 'City'], ['specialization', 'Specialty']].map(([name, label]) => <label key={name}>{label}<input required value={values[name]} onChange={(e) => setValues({ ...values, [name]: e.target.value })} placeholder={label} /></label>)}<label>About<textarea required value={values.about} onChange={(e) => setValues({ ...values, about: e.target.value })} placeholder="Tell the community about your work" rows="4" /></label>{error && <p className="profileEmpty" role="alert">{error}</p>}<button className="createPageBtn" type="submit" disabled={saving}>{saving ? 'Creating…' : 'Create professional page'} <Icon name="chevronRight" size={17} /></button></form>}</div>;
 }
 
 const advantageContent = {

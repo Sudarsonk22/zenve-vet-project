@@ -89,7 +89,7 @@ function mapVet(v) {
 
 // vets
 export async function getVets(viewerId) {
-  const page = await request('/vets' + query({ size: 50, viewerId }));
+  const page = await request('/vets' + query({ size: 100, viewerId }));
   return page.items.map(mapVet);
 }
 

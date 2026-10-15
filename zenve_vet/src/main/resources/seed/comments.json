@@ -1,0 +1,950 @@
+[
+  {
+    "postRef": "case-001",
+    "authorSlug": "megha-patel",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 1
+  },
+  {
+    "postRef": "case-003",
+    "authorSlug": "siddharth-varma",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 18
+  },
+  {
+    "postRef": "case-003",
+    "authorSlug": "rohan-bhatt",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 18
+  },
+  {
+    "postRef": "case-005",
+    "authorSlug": "asha-gill",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 32
+  },
+  {
+    "postRef": "case-005",
+    "authorSlug": "nidhi-qureshi",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 31
+  },
+  {
+    "postRef": "case-005",
+    "authorSlug": "rekha-joshi",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 32
+  },
+  {
+    "postRef": "case-006",
+    "authorSlug": "mohan-menon",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 37
+  },
+  {
+    "postRef": "case-006",
+    "authorSlug": "ashok-thakur",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 38
+  },
+  {
+    "postRef": "case-007",
+    "authorSlug": "naveen-gill",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 41
+  },
+  {
+    "postRef": "case-009",
+    "authorSlug": "lakshmi-thakur",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 52
+  },
+  {
+    "postRef": "case-009",
+    "authorSlug": "vikram-rao",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 51
+  },
+  {
+    "postRef": "case-009",
+    "authorSlug": "tanya-desai",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 51
+  },
+  {
+    "postRef": "case-011",
+    "authorSlug": "rohan-joshi",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 69
+  },
+  {
+    "postRef": "case-012",
+    "authorSlug": "neha-varma",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 72
+  },
+  {
+    "postRef": "case-014",
+    "authorSlug": "ashok-thakur",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 81
+  },
+  {
+    "postRef": "case-015",
+    "authorSlug": "imran-chauhan",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 84
+  },
+  {
+    "postRef": "case-015",
+    "authorSlug": "amit-iyer",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 85
+  },
+  {
+    "postRef": "case-015",
+    "authorSlug": "alok-varma",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 84
+  },
+  {
+    "postRef": "case-018",
+    "authorSlug": "arjun-mishra",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 107
+  },
+  {
+    "postRef": "case-019",
+    "authorSlug": "rahul-joshi",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 114
+  },
+  {
+    "postRef": "case-019",
+    "authorSlug": "naveen-gill",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 114
+  },
+  {
+    "postRef": "case-020",
+    "authorSlug": "gopal-menon",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 124
+  },
+  {
+    "postRef": "case-020",
+    "authorSlug": "ashok-joshi",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 124
+  },
+  {
+    "postRef": "case-020",
+    "authorSlug": "alok-kulkarni",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 123
+  },
+  {
+    "postRef": "case-022",
+    "authorSlug": "prakash-mehta",
+    "body": "Sharing this with our team - the sequencing is the part people get wrong.",
+    "hoursAgo": 140
+  },
+  {
+    "postRef": "case-023",
+    "authorSlug": "naveen-gill",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 147
+  },
+  {
+    "postRef": "case-024",
+    "authorSlug": "vivek-bose",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 154
+  },
+  {
+    "postRef": "case-024",
+    "authorSlug": "sunita-gupta",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 154
+  },
+  {
+    "postRef": "case-025",
+    "authorSlug": "priya-gupta",
+    "body": "Sharing this with our team - the sequencing is the part people get wrong.",
+    "hoursAgo": 160
+  },
+  {
+    "postRef": "case-026",
+    "authorSlug": "tanya-desai",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 169
+  },
+  {
+    "postRef": "case-026",
+    "authorSlug": "rekha-joshi",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 168
+  },
+  {
+    "postRef": "case-026",
+    "authorSlug": "naveen-gill",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 168
+  },
+  {
+    "postRef": "case-027",
+    "authorSlug": "suresh-singh",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 173
+  },
+  {
+    "postRef": "case-027",
+    "authorSlug": "rohan-bhatt",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 173
+  },
+  {
+    "postRef": "case-027",
+    "authorSlug": "rohan-bhatt",
+    "body": "Sharing this with our team - the sequencing is the part people get wrong.",
+    "hoursAgo": 173
+  },
+  {
+    "postRef": "case-028",
+    "authorSlug": "rohan-joshi",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 178
+  },
+  {
+    "postRef": "case-029",
+    "authorSlug": "mohan-menon",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 184
+  },
+  {
+    "postRef": "case-032",
+    "authorSlug": "aditya-dutta",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 203
+  },
+  {
+    "postRef": "case-032",
+    "authorSlug": "ritika-bhatt",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 204
+  },
+  {
+    "postRef": "case-033",
+    "authorSlug": "pooja-iyer",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 207
+  },
+  {
+    "postRef": "case-034",
+    "authorSlug": "bhavna-kapoor",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 215
+  },
+  {
+    "postRef": "case-034",
+    "authorSlug": "imran-joshi",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 215
+  },
+  {
+    "postRef": "post-001",
+    "authorSlug": "rohan-bhatt",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 223
+  },
+  {
+    "postRef": "post-002",
+    "authorSlug": "gopal-menon",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 228
+  },
+  {
+    "postRef": "post-003",
+    "authorSlug": "ananya-sharma",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 230
+  },
+  {
+    "postRef": "post-003",
+    "authorSlug": "neha-varma",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 229
+  },
+  {
+    "postRef": "post-003",
+    "authorSlug": "bhavna-kapoor",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 229
+  },
+  {
+    "postRef": "post-005",
+    "authorSlug": "isha-shaikh",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 237
+  },
+  {
+    "postRef": "post-005",
+    "authorSlug": "imran-mehta",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 238
+  },
+  {
+    "postRef": "post-005",
+    "authorSlug": "manish-patel",
+    "body": "Sharing this with our team - the sequencing is the part people get wrong.",
+    "hoursAgo": 237
+  },
+  {
+    "postRef": "post-006",
+    "authorSlug": "bhavna-kapoor",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 243
+  },
+  {
+    "postRef": "post-006",
+    "authorSlug": "naveen-gill",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 243
+  },
+  {
+    "postRef": "post-009",
+    "authorSlug": "usha-trivedi",
+    "body": "Sharing this with our team - the sequencing is the part people get wrong.",
+    "hoursAgo": 257
+  },
+  {
+    "postRef": "post-009",
+    "authorSlug": "neha-varma",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 258
+  },
+  {
+    "postRef": "post-011",
+    "authorSlug": "priya-gupta",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 266
+  },
+  {
+    "postRef": "post-013",
+    "authorSlug": "bhavna-mishra",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 273
+  },
+  {
+    "postRef": "post-014",
+    "authorSlug": "isha-shaikh",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 275
+  },
+  {
+    "postRef": "post-014",
+    "authorSlug": "rupa-mishra",
+    "body": "Sharing this with our team - the sequencing is the part people get wrong.",
+    "hoursAgo": 275
+  },
+  {
+    "postRef": "post-015",
+    "authorSlug": "shalini-mehta",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 283
+  },
+  {
+    "postRef": "post-015",
+    "authorSlug": "ashok-kulkarni",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 283
+  },
+  {
+    "postRef": "post-015",
+    "authorSlug": "ashok-thakur",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 282
+  },
+  {
+    "postRef": "post-016",
+    "authorSlug": "megha-patel",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 288
+  },
+  {
+    "postRef": "post-016",
+    "authorSlug": "suresh-mehta",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 287
+  },
+  {
+    "postRef": "post-017",
+    "authorSlug": "naveen-gill",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 293
+  },
+  {
+    "postRef": "post-018",
+    "authorSlug": "alok-varma",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 297
+  },
+  {
+    "postRef": "post-020",
+    "authorSlug": "ananya-sharma",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 304
+  },
+  {
+    "postRef": "post-020",
+    "authorSlug": "siddharth-varma",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 303
+  },
+  {
+    "postRef": "post-020",
+    "authorSlug": "alok-varma",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 303
+  },
+  {
+    "postRef": "post-021",
+    "authorSlug": "usha-trivedi",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 309
+  },
+  {
+    "postRef": "post-021",
+    "authorSlug": "isha-shaikh",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 308
+  },
+  {
+    "postRef": "post-022",
+    "authorSlug": "siddharth-varma",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 312
+  },
+  {
+    "postRef": "post-022",
+    "authorSlug": "suresh-mehta",
+    "body": "Sharing this with our team - the sequencing is the part people get wrong.",
+    "hoursAgo": 313
+  },
+  {
+    "postRef": "post-022",
+    "authorSlug": "alok-varma",
+    "body": "Sharing this with our team - the sequencing is the part people get wrong.",
+    "hoursAgo": 312
+  },
+  {
+    "postRef": "post-023",
+    "authorSlug": "rahul-joshi",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 316
+  },
+  {
+    "postRef": "post-023",
+    "authorSlug": "siddharth-varma",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 315
+  },
+  {
+    "postRef": "post-026",
+    "authorSlug": "usha-trivedi",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 324
+  },
+  {
+    "postRef": "post-026",
+    "authorSlug": "imran-mehta",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 323
+  },
+  {
+    "postRef": "post-027",
+    "authorSlug": "imran-joshi",
+    "body": "Sharing this with our team - the sequencing is the part people get wrong.",
+    "hoursAgo": 326
+  },
+  {
+    "postRef": "post-027",
+    "authorSlug": "kiran-qureshi",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 325
+  },
+  {
+    "postRef": "post-027",
+    "authorSlug": "aditya-dutta",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 326
+  },
+  {
+    "postRef": "post-028",
+    "authorSlug": "manish-patel",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 332
+  },
+  {
+    "postRef": "post-028",
+    "authorSlug": "divya-mishra",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 332
+  },
+  {
+    "postRef": "post-029",
+    "authorSlug": "sneha-mehta",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 336
+  },
+  {
+    "postRef": "post-029",
+    "authorSlug": "pooja-iyer",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 337
+  },
+  {
+    "postRef": "post-030",
+    "authorSlug": "naveen-das",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 341
+  },
+  {
+    "postRef": "post-030",
+    "authorSlug": "bhavna-mishra",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 341
+  },
+  {
+    "postRef": "post-030",
+    "authorSlug": "imran-joshi",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 341
+  },
+  {
+    "postRef": "post-031",
+    "authorSlug": "shalini-mehta",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 344
+  },
+  {
+    "postRef": "post-031",
+    "authorSlug": "vivek-gowda",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 345
+  },
+  {
+    "postRef": "post-031",
+    "authorSlug": "usha-trivedi",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 345
+  },
+  {
+    "postRef": "post-032",
+    "authorSlug": "shalini-mehta",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 347
+  },
+  {
+    "postRef": "post-032",
+    "authorSlug": "gurpreet-das",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 347
+  },
+  {
+    "postRef": "post-032",
+    "authorSlug": "naveen-das",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 347
+  },
+  {
+    "postRef": "post-033",
+    "authorSlug": "sanjay-gill",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 351
+  },
+  {
+    "postRef": "post-033",
+    "authorSlug": "shalini-mehta",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 351
+  },
+  {
+    "postRef": "post-033",
+    "authorSlug": "naveen-das",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 352
+  },
+  {
+    "postRef": "post-035",
+    "authorSlug": "amit-sharma",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 365
+  },
+  {
+    "postRef": "post-035",
+    "authorSlug": "nikhil-nair",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 366
+  },
+  {
+    "postRef": "post-035",
+    "authorSlug": "naveen-das",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 366
+  },
+  {
+    "postRef": "post-036",
+    "authorSlug": "rohan-joshi",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 368
+  },
+  {
+    "postRef": "post-036",
+    "authorSlug": "pooja-trivedi",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 368
+  },
+  {
+    "postRef": "post-036",
+    "authorSlug": "suresh-mehta",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 368
+  },
+  {
+    "postRef": "post-037",
+    "authorSlug": "rohan-joshi",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 375
+  },
+  {
+    "postRef": "post-037",
+    "authorSlug": "ashok-thakur",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 375
+  },
+  {
+    "postRef": "post-037",
+    "authorSlug": "megha-patel",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 375
+  },
+  {
+    "postRef": "post-038",
+    "authorSlug": "imran-mehta",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 379
+  },
+  {
+    "postRef": "post-038",
+    "authorSlug": "ashok-pillai",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 379
+  },
+  {
+    "postRef": "post-038",
+    "authorSlug": "imran-joshi",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 379
+  },
+  {
+    "postRef": "post-040",
+    "authorSlug": "bhavna-mishra",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 386
+  },
+  {
+    "postRef": "post-041",
+    "authorSlug": "pooja-trivedi",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 393
+  },
+  {
+    "postRef": "post-042",
+    "authorSlug": "lakshmi-thakur",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 396
+  },
+  {
+    "postRef": "post-042",
+    "authorSlug": "sunita-gupta",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 396
+  },
+  {
+    "postRef": "post-043",
+    "authorSlug": "vivek-gowda",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 399
+  },
+  {
+    "postRef": "post-043",
+    "authorSlug": "suresh-mehta",
+    "body": "Sharing this with our team - the sequencing is the part people get wrong.",
+    "hoursAgo": 399
+  },
+  {
+    "postRef": "post-044",
+    "authorSlug": "sneha-mehta",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 401
+  },
+  {
+    "postRef": "post-044",
+    "authorSlug": "asha-gill",
+    "body": "Sharing this with our team - the sequencing is the part people get wrong.",
+    "hoursAgo": 401
+  },
+  {
+    "postRef": "post-044",
+    "authorSlug": "nitin-pillai",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 402
+  },
+  {
+    "postRef": "post-048",
+    "authorSlug": "ananya-sharma",
+    "body": "Sharing this with our team - the sequencing is the part people get wrong.",
+    "hoursAgo": 423
+  },
+  {
+    "postRef": "post-049",
+    "authorSlug": "ritika-bhatt",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 428
+  },
+  {
+    "postRef": "post-050",
+    "authorSlug": "sunita-gupta",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 433
+  },
+  {
+    "postRef": "post-052",
+    "authorSlug": "ananya-sharma",
+    "body": "Sharing this with our team - the sequencing is the part people get wrong.",
+    "hoursAgo": 443
+  },
+  {
+    "postRef": "post-052",
+    "authorSlug": "vikram-rao",
+    "body": "Sharing this with our team - the sequencing is the part people get wrong.",
+    "hoursAgo": 443
+  },
+  {
+    "postRef": "post-057",
+    "authorSlug": "rekha-dutta",
+    "body": "Sharing this with our team - the sequencing is the part people get wrong.",
+    "hoursAgo": 468
+  },
+  {
+    "postRef": "post-057",
+    "authorSlug": "usha-trivedi",
+    "body": "Sharing this with our team - the sequencing is the part people get wrong.",
+    "hoursAgo": 467
+  },
+  {
+    "postRef": "post-057",
+    "authorSlug": "kiran-gupta",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 467
+  },
+  {
+    "postRef": "post-058",
+    "authorSlug": "ananya-pillai",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 472
+  },
+  {
+    "postRef": "post-058",
+    "authorSlug": "gopal-patel",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 473
+  },
+  {
+    "postRef": "post-059",
+    "authorSlug": "manish-patel",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 478
+  },
+  {
+    "postRef": "post-060",
+    "authorSlug": "nikhil-qureshi",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 483
+  },
+  {
+    "postRef": "post-060",
+    "authorSlug": "ashok-joshi",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 483
+  },
+  {
+    "postRef": "video-002",
+    "authorSlug": "nidhi-qureshi",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 507
+  },
+  {
+    "postRef": "video-003",
+    "authorSlug": "naveen-gill",
+    "body": "Sharing this with our team - the sequencing is the part people get wrong.",
+    "hoursAgo": 525
+  },
+  {
+    "postRef": "video-004",
+    "authorSlug": "nidhi-qureshi",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 533
+  },
+  {
+    "postRef": "video-004",
+    "authorSlug": "ritika-bhatt",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 532
+  },
+  {
+    "postRef": "video-004",
+    "authorSlug": "bhavna-kapoor",
+    "body": "Useful framing - I would add that owner compliance decides most of this.",
+    "hoursAgo": 533
+  },
+  {
+    "postRef": "video-005",
+    "authorSlug": "imran-joshi",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 547
+  },
+  {
+    "postRef": "video-005",
+    "authorSlug": "lakshmi-thakur",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 548
+  },
+  {
+    "postRef": "video-007",
+    "authorSlug": "bhavna-mishra",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 571
+  },
+  {
+    "postRef": "video-007",
+    "authorSlug": "bhavna-mishra",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 571
+  },
+  {
+    "postRef": "video-008",
+    "authorSlug": "priya-gupta",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 581
+  },
+  {
+    "postRef": "video-008",
+    "authorSlug": "aditya-dutta",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 580
+  },
+  {
+    "postRef": "video-008",
+    "authorSlug": "kiran-qureshi",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 581
+  },
+  {
+    "postRef": "video-009",
+    "authorSlug": "suresh-singh",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 590
+  },
+  {
+    "postRef": "video-010",
+    "authorSlug": "vivek-bose",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 597
+  },
+  {
+    "postRef": "video-010",
+    "authorSlug": "sanjay-gill",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 597
+  },
+  {
+    "postRef": "video-010",
+    "authorSlug": "imran-joshi",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 596
+  },
+  {
+    "postRef": "video-011",
+    "authorSlug": "divya-mishra",
+    "body": "We see this pattern often. Thanks for writing it up.",
+    "hoursAgo": 614
+  },
+  {
+    "postRef": "video-011",
+    "authorSlug": "ashok-joshi",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 614
+  },
+  {
+    "postRef": "video-012",
+    "authorSlug": "ashok-kulkarni",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 627
+  },
+  {
+    "postRef": "video-012",
+    "authorSlug": "arjun-mishra",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 628
+  },
+  {
+    "postRef": "video-012",
+    "authorSlug": "lakshmi-joshi",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 628
+  },
+  {
+    "postRef": "video-013",
+    "authorSlug": "alok-varma",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 646
+  },
+  {
+    "postRef": "video-013",
+    "authorSlug": "anjali-das",
+    "body": "Agreed. The history does more work here than any single test.",
+    "hoursAgo": 645
+  },
+  {
+    "postRef": "video-014",
+    "authorSlug": "tanya-desai",
+    "body": "Sharing this with our team - the sequencing is the part people get wrong.",
+    "hoursAgo": 657
+  },
+  {
+    "postRef": "video-016",
+    "authorSlug": "alok-kulkarni",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 681
+  },
+  {
+    "postRef": "video-017",
+    "authorSlug": "lakshmi-thakur",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 693
+  },
+  {
+    "postRef": "video-017",
+    "authorSlug": "tanya-desai",
+    "body": "Good reminder. I have been guilty of skipping that step when the list is long.",
+    "hoursAgo": 693
+  },
+  {
+    "postRef": "video-017",
+    "authorSlug": "rupa-mishra",
+    "body": "Would you image first, or start treatment and reassess at two weeks?",
+    "hoursAgo": 692
+  }
+]

@@ -146,6 +146,8 @@ public class PostService {
         post.setBody(request.body());
         post.setMediaUrl(request.mediaUrl());
         post.setConsentReviewed(Boolean.TRUE.equals(request.consentReviewed()));
+        post.setTakeaways(request.takeaways());
+        post.setTopic(request.topic());
 
         return toResponse(postRepository.save(post), request.authorId());
     }
@@ -276,6 +278,94 @@ public class PostService {
                 vet.getSpecialty(), vet.getCity(), vet.getState(), vet.getAvatarUrl());
     }
 
+    // ------------------------------------------------------------------ search
+
+    /**
+     * Free-text search across posts, used by the Search page.
+     *
+     * <p>Separate from {@link #list} because the feed and the search page ask
+     * different questions: the feed filters by who you follow and whose specialty a
+     * post's author holds, while search matches words in the body and a topic tag
+     * that belongs to the post itself.
+     */
+    @Transactional(readOnly = true)
+    public PageResponse<PostResponse> searchPosts(String q, String topic, String state,
+                                                  boolean hasTakeaways, List<PostType> types,
+                                                  Long viewerId, int page, int size) {
+        if (page < 0) {
+            throw new BadRequestException("Page cannot be negative");
+        }
+        if (size < 1 || size > 50) {
+            throw new BadRequestException("Page size must be between 1 and 50");
+        }
+
+        Specification<Post> spec = withTypes(searchSpec(q, topic, state, hasTakeaways), types);
+        Page<Post> result = postRepository.findAll(spec,
+                PageRequest.of(page, size, Sort.by(Sort.Order.desc("createdAt"))));
+
+        List<PostResponse> items = result.getContent().stream()
+                .map(post -> toResponse(post, viewerId))
+                .toList();
+
+        return new PageResponse<>(items, result.getNumber(), result.getSize(),
+                result.getTotalElements(), result.getTotalPages());
+    }
+
+    /** How many posts the same filters match, optionally narrowed to certain types. */
+    @Transactional(readOnly = true)
+    public long countPosts(String q, String topic, String state, boolean hasTakeaways,
+                           List<PostType> types) {
+        return postRepository.count(withTypes(searchSpec(q, topic, state, hasTakeaways), types));
+    }
+
+    /** Narrows a spec to a set of post types; an empty or null set means every type. */
+    private Specification<Post> withTypes(Specification<Post> spec, List<PostType> types) {
+        if (types == null || types.isEmpty()) {
+            return spec;
+        }
+        return (root, query, cb) -> cb.and(
+                spec.toPredicate(root, query, cb),
+                root.get("type").in(types));
+    }
+
+    private Specification<Post> searchSpec(String q, String topic, String state,
+                                           boolean hasTakeaways) {
+        String needle = q == null ? "" : q.trim().toLowerCase();
+        String wantedTopic = topic == null ? "" : topic.trim();
+        String wantedState = state == null ? "" : state.trim();
+
+        return (root, query, cb) -> {
+            Join<Post, VetProfile> author = root.join("author");
+            List<Predicate> list = new ArrayList<>();
+
+            if (!needle.isEmpty()) {
+                String like = "%" + needle + "%";
+                // The author's name and specialty count as a match: searching
+                // "dermatology" should surface a dermatologist's posts, not just
+                // posts with the word in the body.
+                list.add(cb.or(
+                        cb.like(cb.lower(root.get("body")), like),
+                        cb.like(cb.lower(cb.coalesce(root.get("takeaways"), "")), like),
+                        cb.like(cb.lower(cb.coalesce(root.get("topic"), "")), like),
+                        cb.like(cb.lower(cb.coalesce(root.get("category"), "")), like),
+                        cb.like(cb.lower(author.get("fullName")), like),
+                        cb.like(cb.lower(author.get("specialty")), like)));
+            }
+            if (!wantedTopic.isEmpty()) {
+                list.add(cb.equal(root.get("topic"), wantedTopic));
+            }
+            if (!wantedState.isEmpty()) {
+                list.add(cb.equal(author.get("state"), wantedState));
+            }
+            if (hasTakeaways) {
+                list.add(cb.and(
+                        cb.isNotNull(root.get("takeaways")),
+                        cb.notEqual(cb.trim(root.get("takeaways")), "")));
+            }
+            return list.isEmpty() ? cb.conjunction() : cb.and(list.toArray(new Predicate[0]));
+        };
+    }
+
     private PostResponse toResponse(Post post, Long viewerId) {
         boolean appreciated = viewerId != null
                 && appreciationRepository.existsByPost_IdAndVet_Id(post.getId(), viewerId);
@@ -283,7 +373,8 @@ public class PostService {
                 && savedPostRepository.existsByPost_IdAndVet_Id(post.getId(), viewerId);
 
         return new PostResponse(post.getId(), post.getType(), post.getCategory(), post.getBody(),
-                post.getMediaUrl(), post.isConsentReviewed(), toAuthor(post.getAuthor()),
+                post.getMediaUrl(), post.isConsentReviewed(), post.getTakeaways(), post.getTopic(),
+                toAuthor(post.getAuthor()),
                 post.getViewCount(), post.getAppreciationCount(), post.getCommentCount(),
                 post.getShareCount(), appreciated, saved, post.getCreatedAt());
     }

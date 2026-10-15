@@ -1,6 +1,6 @@
 ﻿/* eslint-disable react-hooks/set-state-in-effect, react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import {
   ArrowLeft,
   BadgeCheck,
@@ -9,6 +9,7 @@ import {
   ImagePlus,
   Link2,
   MapPin,
+  MessageCircle,
   Pencil,
   Stethoscope,
   Trash2,
@@ -22,8 +23,10 @@ import './profile.css';
 
 const tabs = ['About', 'Posts', 'Cases', 'Videos'];
 const tabType = { Posts: 'POST', Cases: 'CLINICAL_CASE', Videos: 'SHORT_VIDEO' };
+import { appRoutes } from '../../config/appRoutes';
 
 export default function ProfilePage({ onBack, onConnect, refreshKey }) {
+  const navigate = useNavigate();
   const { slug } = useParams();
   const meId = getMeId();
   const [profile, setProfile] = useState(null);
@@ -186,9 +189,17 @@ export default function ProfilePage({ onBack, onConnect, refreshKey }) {
               </button>
             </>
           ) : (
-            <button className="pf-btn pf-btn-primary" onClick={() => onConnect(profile)}>
-              <Users size={14} /> {profile.following ? 'Following' : 'Connect'}
-            </button>
+            <>
+              <button className="pf-btn pf-btn-primary" onClick={() => onConnect(profile)}>
+                <Users size={14} /> {profile.following ? 'Following' : 'Connect'}
+              </button>
+              {/* Messages has no way to start a thread of its own any more - this
+                  is it. The route creates the conversation on the backend, so the
+                  person it opens is always a real profile. */}
+              <button className="pf-btn" onClick={() => navigate(appRoutes.messageUser(profile.id))}>
+                <MessageCircle size={14} /> Message
+              </button>
+            </>
           )}
           <button className="pf-btn" onClick={share}>
             <Link2 size={14} /> Share page

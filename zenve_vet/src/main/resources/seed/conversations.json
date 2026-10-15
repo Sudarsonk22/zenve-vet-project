@@ -1,0 +1,59 @@
+[
+  {
+    "participants": ["ritika-bhatt", "aditya-dutta"],
+    "pinnedBy": ["ritika-bhatt"],
+    "readUpToBy": ["aditya-dutta"],
+    "messages": [
+      { "from": "aditya-dutta", "content": "Morning. Did you get a chance to look at the thoracic study I sent over?", "hoursAgo": 30 },
+      { "from": "ritika-bhatt", "content": "I did. Positioning is off - the forelimbs are not drawn far enough forward, so the cranial lobes are obscured.", "hoursAgo": 29 },
+      { "from": "aditya-dutta", "content": "That would explain the opacity everyone was arguing about.", "hoursAgo": 29 },
+      { "from": "ritika-bhatt", "content": "Almost certainly. Worth repeating before anyone commits to a diagnosis.", "hoursAgo": 28 },
+      { "from": "aditya-dutta", "content": "Will redo it this afternoon. Thanks for looking so quickly.", "hoursAgo": 27 }
+    ]
+  },
+  {
+    "participants": ["ritika-bhatt", "aarti-mishra"],
+    "readUpToBy": ["ritika-bhatt", "aarti-mishra"],
+    "messages": [
+      { "from": "ritika-bhatt", "content": "Are you teaching on the final-year rotation this term?", "hoursAgo": 54 },
+      { "from": "aarti-mishra", "content": "Two afternoons a fortnight. Why, are you looking to swap one?", "hoursAgo": 53 },
+      { "from": "ritika-bhatt", "content": "Hoping to sit in, actually. I want to see how you teach palpation before I try it with my own group.", "hoursAgo": 52 },
+      { "from": "aarti-mishra", "content": "Come whenever. Fair warning, the first half hour is mostly me telling them to slow down.", "hoursAgo": 51 }
+    ]
+  },
+  {
+    "participants": ["ritika-bhatt", "imran-mehta"],
+    "messages": [
+      { "from": "imran-mehta", "content": "Quick one - do you have a written anaesthetic checklist I could borrow? Ours is still verbal and it is starting to show.", "hoursAgo": 6 },
+      { "from": "imran-mehta", "content": "Happy to adapt whatever you have rather than start from nothing.", "hoursAgo": 6 },
+      { "from": "ritika-bhatt", "content": "Yes, I will send it across tonight. It is one page, which is the only reason people actually use it.", "hoursAgo": 5 },
+      { "from": "imran-mehta", "content": "One page is exactly what I need. Thank you.", "hoursAgo": 2 }
+    ]
+  },
+  {
+    "participants": ["ritika-bhatt", "sneha-mehta"],
+    "messages": [
+      { "from": "sneha-mehta", "content": "Did you see the elimination-diet case on the feed? The eight-week compliance question comes up constantly here.", "hoursAgo": 12 },
+      { "from": "ritika-bhatt", "content": "I did. Writing the plan down for the owner seems to be the thing that makes the difference.", "hoursAgo": 11 },
+      { "from": "sneha-mehta", "content": "We started giving out a printed sheet last year and the drop-off at week three nearly halved.", "hoursAgo": 10 },
+      { "from": "sneha-mehta", "content": "I can send you the template if it is useful.", "hoursAgo": 1 }
+    ]
+  },
+  {
+    "participants": ["ritika-bhatt", "gopal-patel"],
+    "archivedBy": ["ritika-bhatt"],
+    "readUpToBy": ["ritika-bhatt", "gopal-patel"],
+    "messages": [
+      { "from": "gopal-patel", "content": "Thanks for covering the Saturday list last month - it made a real difference.", "hoursAgo": 400 },
+      { "from": "ritika-bhatt", "content": "Any time. Let me know when the rota comes out for next quarter.", "hoursAgo": 398 }
+    ]
+  },
+  {
+    "participants": ["aditya-dutta", "aarti-mishra"],
+    "readUpToBy": ["aarti-mishra"],
+    "messages": [
+      { "from": "aarti-mishra", "content": "Is the imaging room free on Thursday afternoon? I have a teaching session I would like to run in there.", "hoursAgo": 20 },
+      { "from": "aditya-dutta", "content": "Should be after three. I will put your name against it.", "hoursAgo": 19 }
+    ]
+  }
+]

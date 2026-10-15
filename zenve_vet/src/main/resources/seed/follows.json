@@ -1,0 +1,1266 @@
+[
+  {
+    "followerSlug": "ritika-bhatt",
+    "followingSlug": "priya-gupta"
+  },
+  {
+    "followerSlug": "ritika-bhatt",
+    "followingSlug": "asha-gill"
+  },
+  {
+    "followerSlug": "bhavna-kapoor",
+    "followingSlug": "gurpreet-das"
+  },
+  {
+    "followerSlug": "bhavna-kapoor",
+    "followingSlug": "amit-sharma"
+  },
+  {
+    "followerSlug": "bhavna-kapoor",
+    "followingSlug": "rekha-joshi"
+  },
+  {
+    "followerSlug": "bhavna-kapoor",
+    "followingSlug": "asha-gill"
+  },
+  {
+    "followerSlug": "nitin-pillai",
+    "followingSlug": "ashok-kulkarni"
+  },
+  {
+    "followerSlug": "nitin-pillai",
+    "followingSlug": "bhavna-mishra"
+  },
+  {
+    "followerSlug": "nitin-pillai",
+    "followingSlug": "alok-varma"
+  },
+  {
+    "followerSlug": "ashok-pillai",
+    "followingSlug": "mohan-menon"
+  },
+  {
+    "followerSlug": "ashok-pillai",
+    "followingSlug": "lakshmi-joshi"
+  },
+  {
+    "followerSlug": "ashok-pillai",
+    "followingSlug": "amit-sharma"
+  },
+  {
+    "followerSlug": "ashok-pillai",
+    "followingSlug": "bhavna-mishra"
+  },
+  {
+    "followerSlug": "ashok-pillai",
+    "followingSlug": "sanjay-gill"
+  },
+  {
+    "followerSlug": "ashok-pillai",
+    "followingSlug": "pooja-trivedi"
+  },
+  {
+    "followerSlug": "ashok-kulkarni",
+    "followingSlug": "imran-mehta"
+  },
+  {
+    "followerSlug": "ashok-kulkarni",
+    "followingSlug": "nidhi-gowda"
+  },
+  {
+    "followerSlug": "ashok-kulkarni",
+    "followingSlug": "ashok-joshi"
+  },
+  {
+    "followerSlug": "varun-reddy",
+    "followingSlug": "gopal-patel"
+  },
+  {
+    "followerSlug": "varun-reddy",
+    "followingSlug": "rupa-mishra"
+  },
+  {
+    "followerSlug": "varun-reddy",
+    "followingSlug": "rohan-joshi"
+  },
+  {
+    "followerSlug": "varun-reddy",
+    "followingSlug": "suresh-singh"
+  },
+  {
+    "followerSlug": "varun-reddy",
+    "followingSlug": "vivek-gowda"
+  },
+  {
+    "followerSlug": "suresh-singh",
+    "followingSlug": "nitin-sharma"
+  },
+  {
+    "followerSlug": "suresh-singh",
+    "followingSlug": "imran-chauhan"
+  },
+  {
+    "followerSlug": "suresh-singh",
+    "followingSlug": "pooja-iyer"
+  },
+  {
+    "followerSlug": "suresh-singh",
+    "followingSlug": "ashok-thakur"
+  },
+  {
+    "followerSlug": "suresh-singh",
+    "followingSlug": "gurpreet-das"
+  },
+  {
+    "followerSlug": "nikhil-nair",
+    "followingSlug": "pooja-trivedi"
+  },
+  {
+    "followerSlug": "nikhil-nair",
+    "followingSlug": "pooja-iyer"
+  },
+  {
+    "followerSlug": "nikhil-nair",
+    "followingSlug": "suresh-singh"
+  },
+  {
+    "followerSlug": "nikhil-nair",
+    "followingSlug": "megha-patel"
+  },
+  {
+    "followerSlug": "nikhil-nair",
+    "followingSlug": "kiran-gupta"
+  },
+  {
+    "followerSlug": "nikhil-nair",
+    "followingSlug": "ashok-joshi"
+  },
+  {
+    "followerSlug": "nikhil-nair",
+    "followingSlug": "rohan-bhatt"
+  },
+  {
+    "followerSlug": "imran-joshi",
+    "followingSlug": "pooja-trivedi"
+  },
+  {
+    "followerSlug": "imran-joshi",
+    "followingSlug": "ananya-sharma"
+  },
+  {
+    "followerSlug": "imran-joshi",
+    "followingSlug": "gopal-menon"
+  },
+  {
+    "followerSlug": "imran-joshi",
+    "followingSlug": "ashok-kulkarni"
+  },
+  {
+    "followerSlug": "nidhi-qureshi",
+    "followingSlug": "rohan-joshi"
+  },
+  {
+    "followerSlug": "nidhi-qureshi",
+    "followingSlug": "ashok-pillai"
+  },
+  {
+    "followerSlug": "nidhi-qureshi",
+    "followingSlug": "alok-varma"
+  },
+  {
+    "followerSlug": "nidhi-qureshi",
+    "followingSlug": "imran-joshi"
+  },
+  {
+    "followerSlug": "lakshmi-thakur",
+    "followingSlug": "tanya-desai"
+  },
+  {
+    "followerSlug": "lakshmi-thakur",
+    "followingSlug": "manish-patel"
+  },
+  {
+    "followerSlug": "lakshmi-thakur",
+    "followingSlug": "ananya-sharma"
+  },
+  {
+    "followerSlug": "lakshmi-thakur",
+    "followingSlug": "nidhi-qureshi"
+  },
+  {
+    "followerSlug": "lakshmi-thakur",
+    "followingSlug": "suresh-mehta"
+  },
+  {
+    "followerSlug": "lakshmi-thakur",
+    "followingSlug": "aarti-mishra"
+  },
+  {
+    "followerSlug": "lakshmi-thakur",
+    "followingSlug": "asha-gill"
+  },
+  {
+    "followerSlug": "vikram-rao",
+    "followingSlug": "alok-varma"
+  },
+  {
+    "followerSlug": "vikram-rao",
+    "followingSlug": "nitin-pillai"
+  },
+  {
+    "followerSlug": "shalini-mehta",
+    "followingSlug": "asha-gill"
+  },
+  {
+    "followerSlug": "shalini-mehta",
+    "followingSlug": "gopal-patel"
+  },
+  {
+    "followerSlug": "shalini-mehta",
+    "followingSlug": "usha-trivedi"
+  },
+  {
+    "followerSlug": "shalini-mehta",
+    "followingSlug": "bhavna-kapoor"
+  },
+  {
+    "followerSlug": "shalini-mehta",
+    "followingSlug": "rahul-joshi"
+  },
+  {
+    "followerSlug": "shalini-mehta",
+    "followingSlug": "suresh-mehta"
+  },
+  {
+    "followerSlug": "sunita-gupta",
+    "followingSlug": "ananya-sharma"
+  },
+  {
+    "followerSlug": "sunita-gupta",
+    "followingSlug": "ashok-joshi"
+  },
+  {
+    "followerSlug": "sunita-gupta",
+    "followingSlug": "lakshmi-thakur"
+  },
+  {
+    "followerSlug": "sunita-gupta",
+    "followingSlug": "rekha-joshi"
+  },
+  {
+    "followerSlug": "ananya-sharma",
+    "followingSlug": "alok-varma"
+  },
+  {
+    "followerSlug": "ananya-sharma",
+    "followingSlug": "asha-gill"
+  },
+  {
+    "followerSlug": "ananya-sharma",
+    "followingSlug": "tanya-desai"
+  },
+  {
+    "followerSlug": "ananya-sharma",
+    "followingSlug": "imran-chauhan"
+  },
+  {
+    "followerSlug": "gopal-patel",
+    "followingSlug": "neha-varma"
+  },
+  {
+    "followerSlug": "gopal-patel",
+    "followingSlug": "amit-sharma"
+  },
+  {
+    "followerSlug": "gopal-patel",
+    "followingSlug": "imran-joshi"
+  },
+  {
+    "followerSlug": "gopal-patel",
+    "followingSlug": "divya-mishra"
+  },
+  {
+    "followerSlug": "gopal-patel",
+    "followingSlug": "nikhil-nair"
+  },
+  {
+    "followerSlug": "gopal-patel",
+    "followingSlug": "arjun-mishra"
+  },
+  {
+    "followerSlug": "nitin-sharma",
+    "followingSlug": "nidhi-qureshi"
+  },
+  {
+    "followerSlug": "nitin-sharma",
+    "followingSlug": "sanjay-gill"
+  },
+  {
+    "followerSlug": "nitin-sharma",
+    "followingSlug": "gopal-patel"
+  },
+  {
+    "followerSlug": "nitin-sharma",
+    "followingSlug": "sneha-mehta"
+  },
+  {
+    "followerSlug": "nitin-sharma",
+    "followingSlug": "sunita-gupta"
+  },
+  {
+    "followerSlug": "nitin-sharma",
+    "followingSlug": "rekha-dutta"
+  },
+  {
+    "followerSlug": "nitin-sharma",
+    "followingSlug": "nikhil-nair"
+  },
+  {
+    "followerSlug": "nitin-sharma",
+    "followingSlug": "pooja-trivedi"
+  },
+  {
+    "followerSlug": "imran-chauhan",
+    "followingSlug": "naveen-das"
+  },
+  {
+    "followerSlug": "imran-chauhan",
+    "followingSlug": "kiran-gupta"
+  },
+  {
+    "followerSlug": "imran-chauhan",
+    "followingSlug": "ritika-bhatt"
+  },
+  {
+    "followerSlug": "priya-gupta",
+    "followingSlug": "imran-chauhan"
+  },
+  {
+    "followerSlug": "priya-gupta",
+    "followingSlug": "ashok-joshi"
+  },
+  {
+    "followerSlug": "priya-gupta",
+    "followingSlug": "suresh-mehta"
+  },
+  {
+    "followerSlug": "priya-gupta",
+    "followingSlug": "siddharth-varma"
+  },
+  {
+    "followerSlug": "priya-gupta",
+    "followingSlug": "rohan-joshi"
+  },
+  {
+    "followerSlug": "manish-patel",
+    "followingSlug": "imran-chauhan"
+  },
+  {
+    "followerSlug": "manish-patel",
+    "followingSlug": "divya-mishra"
+  },
+  {
+    "followerSlug": "manish-patel",
+    "followingSlug": "ananya-sharma"
+  },
+  {
+    "followerSlug": "gopal-menon",
+    "followingSlug": "usha-trivedi"
+  },
+  {
+    "followerSlug": "gopal-menon",
+    "followingSlug": "nitin-sharma"
+  },
+  {
+    "followerSlug": "amit-iyer",
+    "followingSlug": "pooja-iyer"
+  },
+  {
+    "followerSlug": "amit-iyer",
+    "followingSlug": "naveen-gill"
+  },
+  {
+    "followerSlug": "amit-iyer",
+    "followingSlug": "nidhi-gowda"
+  },
+  {
+    "followerSlug": "amit-iyer",
+    "followingSlug": "sanjay-gill"
+  },
+  {
+    "followerSlug": "amit-iyer",
+    "followingSlug": "lakshmi-joshi"
+  },
+  {
+    "followerSlug": "amit-iyer",
+    "followingSlug": "shalini-mehta"
+  },
+  {
+    "followerSlug": "amit-iyer",
+    "followingSlug": "asha-gill"
+  },
+  {
+    "followerSlug": "amit-iyer",
+    "followingSlug": "rekha-joshi"
+  },
+  {
+    "followerSlug": "pooja-iyer",
+    "followingSlug": "sanjay-gill"
+  },
+  {
+    "followerSlug": "pooja-iyer",
+    "followingSlug": "nitin-pillai"
+  },
+  {
+    "followerSlug": "pooja-iyer",
+    "followingSlug": "varun-reddy"
+  },
+  {
+    "followerSlug": "pooja-iyer",
+    "followingSlug": "amit-sharma"
+  },
+  {
+    "followerSlug": "pooja-iyer",
+    "followingSlug": "priya-gupta"
+  },
+  {
+    "followerSlug": "pooja-iyer",
+    "followingSlug": "naveen-gill"
+  },
+  {
+    "followerSlug": "pooja-iyer",
+    "followingSlug": "bhavna-kapoor"
+  },
+  {
+    "followerSlug": "vivek-gowda",
+    "followingSlug": "gopal-patel"
+  },
+  {
+    "followerSlug": "vivek-gowda",
+    "followingSlug": "suresh-singh"
+  },
+  {
+    "followerSlug": "vivek-gowda",
+    "followingSlug": "pooja-iyer"
+  },
+  {
+    "followerSlug": "vivek-gowda",
+    "followingSlug": "aditya-dutta"
+  },
+  {
+    "followerSlug": "vivek-gowda",
+    "followingSlug": "nidhi-qureshi"
+  },
+  {
+    "followerSlug": "amit-sharma",
+    "followingSlug": "bhavna-kapoor"
+  },
+  {
+    "followerSlug": "amit-sharma",
+    "followingSlug": "rahul-joshi"
+  },
+  {
+    "followerSlug": "rupa-mishra",
+    "followingSlug": "pooja-trivedi"
+  },
+  {
+    "followerSlug": "rupa-mishra",
+    "followingSlug": "alok-varma"
+  },
+  {
+    "followerSlug": "rupa-mishra",
+    "followingSlug": "nikhil-qureshi"
+  },
+  {
+    "followerSlug": "rupa-mishra",
+    "followingSlug": "kiran-qureshi"
+  },
+  {
+    "followerSlug": "arjun-mishra",
+    "followingSlug": "megha-patel"
+  },
+  {
+    "followerSlug": "arjun-mishra",
+    "followingSlug": "imran-chauhan"
+  },
+  {
+    "followerSlug": "vivek-bose",
+    "followingSlug": "pooja-iyer"
+  },
+  {
+    "followerSlug": "vivek-bose",
+    "followingSlug": "usha-trivedi"
+  },
+  {
+    "followerSlug": "aarti-mishra",
+    "followingSlug": "gopal-patel"
+  },
+  {
+    "followerSlug": "aarti-mishra",
+    "followingSlug": "bhavna-kapoor"
+  },
+  {
+    "followerSlug": "aarti-mishra",
+    "followingSlug": "alok-kulkarni"
+  },
+  {
+    "followerSlug": "aarti-mishra",
+    "followingSlug": "naveen-das"
+  },
+  {
+    "followerSlug": "aarti-mishra",
+    "followingSlug": "pooja-trivedi"
+  },
+  {
+    "followerSlug": "aarti-mishra",
+    "followingSlug": "tanya-desai"
+  },
+  {
+    "followerSlug": "isha-shaikh",
+    "followingSlug": "amit-iyer"
+  },
+  {
+    "followerSlug": "isha-shaikh",
+    "followingSlug": "sunita-gupta"
+  },
+  {
+    "followerSlug": "isha-shaikh",
+    "followingSlug": "aarti-mishra"
+  },
+  {
+    "followerSlug": "isha-shaikh",
+    "followingSlug": "pooja-iyer"
+  },
+  {
+    "followerSlug": "isha-shaikh",
+    "followingSlug": "kiran-qureshi"
+  },
+  {
+    "followerSlug": "isha-shaikh",
+    "followingSlug": "vivek-gowda"
+  },
+  {
+    "followerSlug": "isha-shaikh",
+    "followingSlug": "bhavna-mishra"
+  },
+  {
+    "followerSlug": "isha-shaikh",
+    "followingSlug": "manish-patel"
+  },
+  {
+    "followerSlug": "divya-mishra",
+    "followingSlug": "nitin-sharma"
+  },
+  {
+    "followerSlug": "divya-mishra",
+    "followingSlug": "sneha-mehta"
+  },
+  {
+    "followerSlug": "divya-mishra",
+    "followingSlug": "asha-gill"
+  },
+  {
+    "followerSlug": "divya-mishra",
+    "followingSlug": "naveen-gill"
+  },
+  {
+    "followerSlug": "divya-mishra",
+    "followingSlug": "alok-varma"
+  },
+  {
+    "followerSlug": "rahul-joshi",
+    "followingSlug": "megha-patel"
+  },
+  {
+    "followerSlug": "rahul-joshi",
+    "followingSlug": "rekha-joshi"
+  },
+  {
+    "followerSlug": "rekha-joshi",
+    "followingSlug": "ananya-sharma"
+  },
+  {
+    "followerSlug": "rekha-joshi",
+    "followingSlug": "amit-sharma"
+  },
+  {
+    "followerSlug": "asha-gill",
+    "followingSlug": "usha-trivedi"
+  },
+  {
+    "followerSlug": "asha-gill",
+    "followingSlug": "ritika-bhatt"
+  },
+  {
+    "followerSlug": "asha-gill",
+    "followingSlug": "amit-iyer"
+  },
+  {
+    "followerSlug": "asha-gill",
+    "followingSlug": "rohan-bhatt"
+  },
+  {
+    "followerSlug": "asha-gill",
+    "followingSlug": "vivek-bose"
+  },
+  {
+    "followerSlug": "asha-gill",
+    "followingSlug": "rohan-joshi"
+  },
+  {
+    "followerSlug": "prakash-mehta",
+    "followingSlug": "aditya-dutta"
+  },
+  {
+    "followerSlug": "prakash-mehta",
+    "followingSlug": "vivek-gowda"
+  },
+  {
+    "followerSlug": "alok-kulkarni",
+    "followingSlug": "neha-varma"
+  },
+  {
+    "followerSlug": "alok-kulkarni",
+    "followingSlug": "varun-reddy"
+  },
+  {
+    "followerSlug": "alok-kulkarni",
+    "followingSlug": "nikhil-qureshi"
+  },
+  {
+    "followerSlug": "alok-kulkarni",
+    "followingSlug": "naveen-das"
+  },
+  {
+    "followerSlug": "ashok-joshi",
+    "followingSlug": "nikhil-nair"
+  },
+  {
+    "followerSlug": "ashok-joshi",
+    "followingSlug": "neha-varma"
+  },
+  {
+    "followerSlug": "ashok-joshi",
+    "followingSlug": "ananya-pillai"
+  },
+  {
+    "followerSlug": "ashok-joshi",
+    "followingSlug": "nitin-pillai"
+  },
+  {
+    "followerSlug": "ashok-joshi",
+    "followingSlug": "rekha-joshi"
+  },
+  {
+    "followerSlug": "ashok-joshi",
+    "followingSlug": "nitin-sharma"
+  },
+  {
+    "followerSlug": "lakshmi-joshi",
+    "followingSlug": "arjun-mishra"
+  },
+  {
+    "followerSlug": "lakshmi-joshi",
+    "followingSlug": "amit-iyer"
+  },
+  {
+    "followerSlug": "ananya-pillai",
+    "followingSlug": "tanya-desai"
+  },
+  {
+    "followerSlug": "ananya-pillai",
+    "followingSlug": "suresh-singh"
+  },
+  {
+    "followerSlug": "ananya-pillai",
+    "followingSlug": "ashok-joshi"
+  },
+  {
+    "followerSlug": "ananya-pillai",
+    "followingSlug": "alok-varma"
+  },
+  {
+    "followerSlug": "ananya-pillai",
+    "followingSlug": "megha-patel"
+  },
+  {
+    "followerSlug": "ananya-pillai",
+    "followingSlug": "amit-iyer"
+  },
+  {
+    "followerSlug": "ananya-pillai",
+    "followingSlug": "rahul-joshi"
+  },
+  {
+    "followerSlug": "mohan-menon",
+    "followingSlug": "nikhil-qureshi"
+  },
+  {
+    "followerSlug": "mohan-menon",
+    "followingSlug": "gopal-patel"
+  },
+  {
+    "followerSlug": "alok-varma",
+    "followingSlug": "imran-mehta"
+  },
+  {
+    "followerSlug": "alok-varma",
+    "followingSlug": "shalini-mehta"
+  },
+  {
+    "followerSlug": "alok-varma",
+    "followingSlug": "gopal-patel"
+  },
+  {
+    "followerSlug": "alok-varma",
+    "followingSlug": "ananya-pillai"
+  },
+  {
+    "followerSlug": "alok-varma",
+    "followingSlug": "kiran-gupta"
+  },
+  {
+    "followerSlug": "alok-varma",
+    "followingSlug": "naveen-das"
+  },
+  {
+    "followerSlug": "alok-varma",
+    "followingSlug": "tanya-desai"
+  },
+  {
+    "followerSlug": "alok-varma",
+    "followingSlug": "aarti-mishra"
+  },
+  {
+    "followerSlug": "siddharth-varma",
+    "followingSlug": "vivek-bose"
+  },
+  {
+    "followerSlug": "siddharth-varma",
+    "followingSlug": "sunita-gupta"
+  },
+  {
+    "followerSlug": "siddharth-varma",
+    "followingSlug": "naveen-gill"
+  },
+  {
+    "followerSlug": "siddharth-varma",
+    "followingSlug": "aarti-mishra"
+  },
+  {
+    "followerSlug": "siddharth-varma",
+    "followingSlug": "imran-chauhan"
+  },
+  {
+    "followerSlug": "siddharth-varma",
+    "followingSlug": "imran-joshi"
+  },
+  {
+    "followerSlug": "siddharth-varma",
+    "followingSlug": "rupa-mishra"
+  },
+  {
+    "followerSlug": "aditya-dutta",
+    "followingSlug": "alok-kulkarni"
+  },
+  {
+    "followerSlug": "aditya-dutta",
+    "followingSlug": "sunita-gupta"
+  },
+  {
+    "followerSlug": "aditya-dutta",
+    "followingSlug": "nitin-sharma"
+  },
+  {
+    "followerSlug": "aditya-dutta",
+    "followingSlug": "usha-trivedi"
+  },
+  {
+    "followerSlug": "aditya-dutta",
+    "followingSlug": "asha-gill"
+  },
+  {
+    "followerSlug": "aditya-dutta",
+    "followingSlug": "megha-patel"
+  },
+  {
+    "followerSlug": "nikhil-qureshi",
+    "followingSlug": "pooja-trivedi"
+  },
+  {
+    "followerSlug": "nikhil-qureshi",
+    "followingSlug": "kiran-qureshi"
+  },
+  {
+    "followerSlug": "nikhil-qureshi",
+    "followingSlug": "ritika-bhatt"
+  },
+  {
+    "followerSlug": "rohan-bhatt",
+    "followingSlug": "imran-chauhan"
+  },
+  {
+    "followerSlug": "rohan-bhatt",
+    "followingSlug": "varun-reddy"
+  },
+  {
+    "followerSlug": "pooja-trivedi",
+    "followingSlug": "rupa-mishra"
+  },
+  {
+    "followerSlug": "pooja-trivedi",
+    "followingSlug": "ananya-sharma"
+  },
+  {
+    "followerSlug": "pooja-trivedi",
+    "followingSlug": "vivek-gowda"
+  },
+  {
+    "followerSlug": "pooja-trivedi",
+    "followingSlug": "varun-reddy"
+  },
+  {
+    "followerSlug": "pooja-trivedi",
+    "followingSlug": "gopal-menon"
+  },
+  {
+    "followerSlug": "pooja-trivedi",
+    "followingSlug": "lakshmi-thakur"
+  },
+  {
+    "followerSlug": "pooja-trivedi",
+    "followingSlug": "sunita-gupta"
+  },
+  {
+    "followerSlug": "pooja-trivedi",
+    "followingSlug": "ananya-pillai"
+  },
+  {
+    "followerSlug": "naveen-das",
+    "followingSlug": "vivek-bose"
+  },
+  {
+    "followerSlug": "naveen-das",
+    "followingSlug": "imran-mehta"
+  },
+  {
+    "followerSlug": "naveen-das",
+    "followingSlug": "naveen-gill"
+  },
+  {
+    "followerSlug": "kiran-gupta",
+    "followingSlug": "gopal-menon"
+  },
+  {
+    "followerSlug": "kiran-gupta",
+    "followingSlug": "rekha-joshi"
+  },
+  {
+    "followerSlug": "kiran-gupta",
+    "followingSlug": "nikhil-nair"
+  },
+  {
+    "followerSlug": "kiran-gupta",
+    "followingSlug": "ananya-sharma"
+  },
+  {
+    "followerSlug": "kiran-gupta",
+    "followingSlug": "rohan-bhatt"
+  },
+  {
+    "followerSlug": "kiran-gupta",
+    "followingSlug": "neha-varma"
+  },
+  {
+    "followerSlug": "imran-mehta",
+    "followingSlug": "sanjay-gill"
+  },
+  {
+    "followerSlug": "imran-mehta",
+    "followingSlug": "nidhi-gowda"
+  },
+  {
+    "followerSlug": "imran-mehta",
+    "followingSlug": "pooja-iyer"
+  },
+  {
+    "followerSlug": "imran-mehta",
+    "followingSlug": "rekha-dutta"
+  },
+  {
+    "followerSlug": "imran-mehta",
+    "followingSlug": "kiran-gupta"
+  },
+  {
+    "followerSlug": "megha-patel",
+    "followingSlug": "mohan-menon"
+  },
+  {
+    "followerSlug": "megha-patel",
+    "followingSlug": "lakshmi-thakur"
+  },
+  {
+    "followerSlug": "megha-patel",
+    "followingSlug": "aarti-mishra"
+  },
+  {
+    "followerSlug": "megha-patel",
+    "followingSlug": "sanjay-gill"
+  },
+  {
+    "followerSlug": "megha-patel",
+    "followingSlug": "sunita-gupta"
+  },
+  {
+    "followerSlug": "megha-patel",
+    "followingSlug": "ritika-bhatt"
+  },
+  {
+    "followerSlug": "megha-patel",
+    "followingSlug": "ananya-pillai"
+  },
+  {
+    "followerSlug": "megha-patel",
+    "followingSlug": "suresh-mehta"
+  },
+  {
+    "followerSlug": "sneha-mehta",
+    "followingSlug": "alok-varma"
+  },
+  {
+    "followerSlug": "sneha-mehta",
+    "followingSlug": "ananya-sharma"
+  },
+  {
+    "followerSlug": "suresh-mehta",
+    "followingSlug": "bhavna-kapoor"
+  },
+  {
+    "followerSlug": "suresh-mehta",
+    "followingSlug": "pooja-trivedi"
+  },
+  {
+    "followerSlug": "suresh-mehta",
+    "followingSlug": "ashok-kulkarni"
+  },
+  {
+    "followerSlug": "kiran-qureshi",
+    "followingSlug": "divya-mishra"
+  },
+  {
+    "followerSlug": "kiran-qureshi",
+    "followingSlug": "vivek-gowda"
+  },
+  {
+    "followerSlug": "kiran-qureshi",
+    "followingSlug": "amit-sharma"
+  },
+  {
+    "followerSlug": "kiran-qureshi",
+    "followingSlug": "ritika-bhatt"
+  },
+  {
+    "followerSlug": "kiran-qureshi",
+    "followingSlug": "gopal-patel"
+  },
+  {
+    "followerSlug": "kiran-qureshi",
+    "followingSlug": "pooja-iyer"
+  },
+  {
+    "followerSlug": "kiran-qureshi",
+    "followingSlug": "bhavna-mishra"
+  },
+  {
+    "followerSlug": "usha-trivedi",
+    "followingSlug": "lakshmi-thakur"
+  },
+  {
+    "followerSlug": "usha-trivedi",
+    "followingSlug": "vikram-rao"
+  },
+  {
+    "followerSlug": "usha-trivedi",
+    "followingSlug": "imran-chauhan"
+  },
+  {
+    "followerSlug": "usha-trivedi",
+    "followingSlug": "imran-mehta"
+  },
+  {
+    "followerSlug": "neha-varma",
+    "followingSlug": "imran-mehta"
+  },
+  {
+    "followerSlug": "neha-varma",
+    "followingSlug": "usha-trivedi"
+  },
+  {
+    "followerSlug": "neha-varma",
+    "followingSlug": "sanjay-gill"
+  },
+  {
+    "followerSlug": "neha-varma",
+    "followingSlug": "ananya-sharma"
+  },
+  {
+    "followerSlug": "anjali-das",
+    "followingSlug": "imran-mehta"
+  },
+  {
+    "followerSlug": "anjali-das",
+    "followingSlug": "naveen-das"
+  },
+  {
+    "followerSlug": "anjali-das",
+    "followingSlug": "pooja-iyer"
+  },
+  {
+    "followerSlug": "anjali-das",
+    "followingSlug": "aarti-mishra"
+  },
+  {
+    "followerSlug": "anjali-das",
+    "followingSlug": "ashok-joshi"
+  },
+  {
+    "followerSlug": "anjali-das",
+    "followingSlug": "tanya-desai"
+  },
+  {
+    "followerSlug": "anjali-das",
+    "followingSlug": "rekha-dutta"
+  },
+  {
+    "followerSlug": "anjali-das",
+    "followingSlug": "kiran-gupta"
+  },
+  {
+    "followerSlug": "nidhi-gowda",
+    "followingSlug": "anjali-das"
+  },
+  {
+    "followerSlug": "nidhi-gowda",
+    "followingSlug": "ashok-joshi"
+  },
+  {
+    "followerSlug": "nidhi-gowda",
+    "followingSlug": "rohan-joshi"
+  },
+  {
+    "followerSlug": "nidhi-gowda",
+    "followingSlug": "isha-shaikh"
+  },
+  {
+    "followerSlug": "nidhi-gowda",
+    "followingSlug": "lakshmi-joshi"
+  },
+  {
+    "followerSlug": "nidhi-gowda",
+    "followingSlug": "suresh-singh"
+  },
+  {
+    "followerSlug": "nidhi-gowda",
+    "followingSlug": "nikhil-nair"
+  },
+  {
+    "followerSlug": "sanjay-gill",
+    "followingSlug": "ashok-thakur"
+  },
+  {
+    "followerSlug": "sanjay-gill",
+    "followingSlug": "ashok-pillai"
+  },
+  {
+    "followerSlug": "sanjay-gill",
+    "followingSlug": "sunita-gupta"
+  },
+  {
+    "followerSlug": "sanjay-gill",
+    "followingSlug": "nitin-pillai"
+  },
+  {
+    "followerSlug": "sanjay-gill",
+    "followingSlug": "vivek-bose"
+  },
+  {
+    "followerSlug": "sanjay-gill",
+    "followingSlug": "nidhi-qureshi"
+  },
+  {
+    "followerSlug": "rekha-dutta",
+    "followingSlug": "sneha-mehta"
+  },
+  {
+    "followerSlug": "rekha-dutta",
+    "followingSlug": "lakshmi-joshi"
+  },
+  {
+    "followerSlug": "rekha-dutta",
+    "followingSlug": "nikhil-qureshi"
+  },
+  {
+    "followerSlug": "rekha-dutta",
+    "followingSlug": "ritika-bhatt"
+  },
+  {
+    "followerSlug": "rekha-dutta",
+    "followingSlug": "pooja-iyer"
+  },
+  {
+    "followerSlug": "bhavna-mishra",
+    "followingSlug": "ashok-kulkarni"
+  },
+  {
+    "followerSlug": "bhavna-mishra",
+    "followingSlug": "rohan-joshi"
+  },
+  {
+    "followerSlug": "bhavna-mishra",
+    "followingSlug": "alok-kulkarni"
+  },
+  {
+    "followerSlug": "bhavna-mishra",
+    "followingSlug": "rekha-joshi"
+  },
+  {
+    "followerSlug": "bhavna-mishra",
+    "followingSlug": "ashok-thakur"
+  },
+  {
+    "followerSlug": "bhavna-mishra",
+    "followingSlug": "rohan-bhatt"
+  },
+  {
+    "followerSlug": "naveen-gill",
+    "followingSlug": "anjali-das"
+  },
+  {
+    "followerSlug": "naveen-gill",
+    "followingSlug": "usha-trivedi"
+  },
+  {
+    "followerSlug": "naveen-gill",
+    "followingSlug": "alok-kulkarni"
+  },
+  {
+    "followerSlug": "naveen-gill",
+    "followingSlug": "nitin-pillai"
+  },
+  {
+    "followerSlug": "naveen-gill",
+    "followingSlug": "mohan-menon"
+  },
+  {
+    "followerSlug": "naveen-gill",
+    "followingSlug": "ashok-joshi"
+  },
+  {
+    "followerSlug": "naveen-gill",
+    "followingSlug": "alok-varma"
+  },
+  {
+    "followerSlug": "tanya-desai",
+    "followingSlug": "siddharth-varma"
+  },
+  {
+    "followerSlug": "tanya-desai",
+    "followingSlug": "ananya-sharma"
+  },
+  {
+    "followerSlug": "tanya-desai",
+    "followingSlug": "imran-chauhan"
+  },
+  {
+    "followerSlug": "tanya-desai",
+    "followingSlug": "amit-sharma"
+  },
+  {
+    "followerSlug": "tanya-desai",
+    "followingSlug": "priya-gupta"
+  },
+  {
+    "followerSlug": "tanya-desai",
+    "followingSlug": "lakshmi-thakur"
+  },
+  {
+    "followerSlug": "tanya-desai",
+    "followingSlug": "ashok-thakur"
+  },
+  {
+    "followerSlug": "ashok-thakur",
+    "followingSlug": "prakash-mehta"
+  },
+  {
+    "followerSlug": "ashok-thakur",
+    "followingSlug": "imran-chauhan"
+  },
+  {
+    "followerSlug": "ashok-thakur",
+    "followingSlug": "ritika-bhatt"
+  },
+  {
+    "followerSlug": "gurpreet-das",
+    "followingSlug": "amit-sharma"
+  },
+  {
+    "followerSlug": "gurpreet-das",
+    "followingSlug": "siddharth-varma"
+  },
+  {
+    "followerSlug": "gurpreet-das",
+    "followingSlug": "rekha-dutta"
+  },
+  {
+    "followerSlug": "gurpreet-das",
+    "followingSlug": "ashok-kulkarni"
+  },
+  {
+    "followerSlug": "gurpreet-das",
+    "followingSlug": "prakash-mehta"
+  },
+  {
+    "followerSlug": "gurpreet-das",
+    "followingSlug": "sneha-mehta"
+  },
+  {
+    "followerSlug": "gurpreet-das",
+    "followingSlug": "ananya-sharma"
+  },
+  {
+    "followerSlug": "gurpreet-das",
+    "followingSlug": "rohan-bhatt"
+  },
+  {
+    "followerSlug": "rohan-joshi",
+    "followingSlug": "vivek-gowda"
+  },
+  {
+    "followerSlug": "rohan-joshi",
+    "followingSlug": "gopal-patel"
+  },
+  {
+    "followerSlug": "rohan-joshi",
+    "followingSlug": "suresh-mehta"
+  },
+  {
+    "followerSlug": "rohan-joshi",
+    "followingSlug": "aditya-dutta"
+  },
+  {
+    "followerSlug": "rohan-joshi",
+    "followingSlug": "nidhi-qureshi"
+  },
+  {
+    "followerSlug": "rohan-joshi",
+    "followingSlug": "amit-sharma"
+  },
+  {
+    "followerSlug": "rohan-joshi",
+    "followingSlug": "rupa-mishra"
+  },
+  {
+    "followerSlug": "rohan-joshi",
+    "followingSlug": "rahul-joshi"
+  }
+]

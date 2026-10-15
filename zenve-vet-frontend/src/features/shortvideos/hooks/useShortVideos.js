@@ -28,6 +28,9 @@ export default function useShortVideos({ source = 'feed', feed = 'forYou', categ
   const [items, setItems] = useState([]);
   const [page, setPage] = useState(0);
   const [hasMore, setHasMore] = useState(false);
+  // How many match the filters, which is not the same as how many are loaded -
+  // this is an infinite-scroll page, so items.length only ever means "so far".
+  const [total, setTotal] = useState(null);
   const [loading, setLoading] = useState(true);
   const [loadingMore, setLoadingMore] = useState(false);
   const [error, setError] = useState('');
@@ -63,6 +66,7 @@ export default function useShortVideos({ source = 'feed', feed = 'forYou', categ
       setItems(result.items);
       setPage(result.page ?? 0);
       setHasMore(result.hasMore);
+      setTotal(result.total ?? result.items.length);
     } catch (e) {
       if (isCanceled(e)) return;
       // Backend data always wins; these animal-care samples only keep the UI usable offline.
@@ -95,6 +99,7 @@ export default function useShortVideos({ source = 'feed', feed = 'forYou', categ
       });
       setPage(result.page ?? page + 1);
       setHasMore(result.hasMore);
+      if (result.total != null) setTotal(result.total);
     } catch (e) {
       if (!isCanceled(e)) setLoadMoreError(getErrorMessage(e, 'Could not load more videos.'));
     } finally {
@@ -169,7 +174,7 @@ export default function useShortVideos({ source = 'feed', feed = 'forYou', categ
   );
 
   return {
-    items, loading, loadingMore, error, loadMoreError, hasMore, loadMore, refresh: loadFirst,
+    items, total, loading, loadingMore, error, loadMoreError, hasMore, loadMore, refresh: loadFirst,
     pending, actionError, clearActionError: () => setActionError(''),
     patchVideo, toggleLike, toggleSave, toggleFollow, removeVideo,
   };

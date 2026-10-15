@@ -1,0 +1,100 @@
+.sidebar .sf {
+  border-top: 1px solid #e1e4dd;
+  margin-top: 28px;
+  padding-top: 24px;
+  display: grid;
+  gap: 4px;
+}
+
+.sidebar .sf-kicker {
+  font-size: 9px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #455d53;
+  margin-bottom: 8px;
+}
+
+.sidebar .sf-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 44px;
+  padding: 0 15px;
+  border: 0;
+  border-radius: 2px;
+  background: transparent;
+  color: #5e6b64;
+  font-size: 13px;
+  text-align: left;
+  cursor: default;
+}
+
+.sidebar .sf-link span {
+  flex: 1;
+}
+
+.sidebar .sf-link:hover {
+  background: #f5f7f3;
+}
+
+.sidebar .sf-card {
+  margin-top: 18px;
+  padding: 20px 18px;
+  background: #f8e8d0;
+  border: 1px solid #e8cc8e;
+  color: #17251e;
+  border-radius: 6px;
+}
+
+.sidebar .sf-card svg {
+  color: #c9954a;
+}
+
+.sidebar .sf-card h3 {
+  font: 500 22px/1.3 Manrope, sans-serif;
+  margin: 14px 0 10px;
+}
+
+.sidebar .sf-card p {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #5e6b64;
+  margin: 0 0 16px;
+}
+
+.sidebar .sf-card button {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  background: #07533f;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.sidebar .sf-card small {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 8px;
+  letter-spacing: 1.4px;
+  color: #758078;
+}
+
+.sidebar .sf-foot {
+  margin-top: 20px;
+  display: grid;
+  gap: 6px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #758078;
+}
+
+.sidebar .sf-foot a {
+  color: #07533f;
+  font-size: 12px;
+  letter-spacing: 0;
+  text-decoration: underline;
+}

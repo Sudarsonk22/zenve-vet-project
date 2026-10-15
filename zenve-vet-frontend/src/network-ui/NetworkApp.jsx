@@ -1,6 +1,6 @@
-﻿import { useState } from 'react';
+﻿import { useEffect, useState } from 'react';
 import './index.css';
-import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
+import { Routes, Route, Navigate, useNavigate, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import CreateProfileModal from './components/CreateProfileModal';
@@ -14,16 +14,27 @@ import { appRoutes } from '../config/appRoutes';
 import AdvertisePage from '../features/AdvertistPage/AdvertisePage';
 import BenefitsPage from '../features/AdvertistPage/BenefitsPage';
 import MessagesPage from '../features/messages/pages/MessagesPage';
-import MemberBenefitsPage from '../features/profiles/pages/MemberBenefitsPage';
 import {
   AdvantagePage,
   CreateProfessionalPage,
   ProfessionalProfilePage,
 } from '../features/profiles/pages/ProfessionalPages';
-import SearchPage from '../features/search/pages/SearchPage';
+import SearchDiscover from './pages/SearchDiscover';
 import SavedVideosPage from '../features/shortvideos/pages/SavedVideosPage';
 import ShortVideosPage from '../features/shortvideos/pages/ShortVideosPage';
 import WatchHistoryPage from '../features/shortvideos/pages/WatchHistoryPage';
+import TeamReviewPage from '../features/team/TeamReviewPage';
+
+const pages = {
+  Feed: '/feed',
+  'Vet network': '/network',
+  'Clinical cases': '/clinical-cases',
+  'Short videos': appRoutes.shortVideos,
+  Messages: appRoutes.messages,
+  Search: appRoutes.search,
+  'Member benefits': appRoutes.benefits,
+  Advertise: appRoutes.advertise,
+};
 
 export default function NetworkApp() {
   const navigate = useNavigate();
@@ -35,6 +46,18 @@ export default function NetworkApp() {
   const [toast, setToast] = useState('');
   const [refreshKey, setRefreshKey] = useState(0);
 
+  useEffect(() => {
+    const path = location.pathname;
+    if (path.startsWith('/profile')) {
+      setActive('Vet network');
+      return;
+    }
+    const found = Object.keys(pages).find(
+      label => path === pages[label] || path.startsWith(pages[label] + '/')
+    );
+    setActive(found || 'Feed');
+  }, [location.pathname]);
+
   const showToast = (text, time = 2800) => {
     setToast(text);
     setTimeout(() => setToast(''), time);
@@ -42,13 +65,7 @@ export default function NetworkApp() {
 
   const go = label => {
     setActive(label);
-    if (label === 'Clinical cases') navigate('/clinical-cases');
-    else if (label === 'Vet network') navigate('/network');
-    else if (label === 'Feed') navigate('/feed');
-    else {
-      navigate('/' + label.toLowerCase().replaceAll(' ', '-'));
-      showToast(`${label} preview selected`, 2500);
-    }
+    navigate(pages[label] || '/feed');
   };
 
   const create = async form => {
@@ -109,6 +126,10 @@ export default function NetworkApp() {
     />
   );
 
+  if (location.pathname.startsWith('/team-review')) {
+    return <TeamReviewPage />;
+  }
+
   return (
     <div className="app-shell">
       <Header
@@ -140,13 +161,25 @@ export default function NetworkApp() {
           <Route path={appRoutes.savedVideos} element={<SavedVideosPage />} />
           <Route path={appRoutes.watchHistory} element={<WatchHistoryPage />} />
           <Route path={appRoutes.messages} element={<MessagesPage />} />
-          <Route path={appRoutes.search} element={<SearchPage />} />
+          <Route
+            path={appRoutes.search}
+            element={
+              <SearchDiscover onView={view} onConnect={connect} globalQuery={globalQuery} />
+            }
+          />
           <Route path={appRoutes.advertise} element={<AdvertisePage />} />
-          <Route path={appRoutes.benefits} element={<BenefitsPage />} />
+          <Route
+            path={appRoutes.benefits}
+            element={<BenefitsPage onCreate={() => setModal(true)} />}
+          />
+          <Route
+            path={appRoutes.memberBenefits}
+            element={<Navigate to={appRoutes.benefits} replace />}
+          />
           <Route path={appRoutes.createProfessionalPage} element={<CreateProfessionalPage />} />
           <Route path="/professional/:id" element={<ProfessionalProfilePage />} />
           <Route path="/advantage/:topic" element={<AdvantagePage />} />
-          <Route path={appRoutes.memberBenefits} element={<MemberBenefitsPage />} />          <Route
+          <Route
             path="*"
             element={
               <div className="main-content">
@@ -176,7 +209,3 @@ export default function NetworkApp() {
     </div>
   );
 }
-
-
-
-

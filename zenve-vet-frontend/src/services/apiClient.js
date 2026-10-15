@@ -9,9 +9,31 @@ if (!baseURL) {
 
 const apiClient = axios.create({ baseURL, timeout: 30000 });
 
+// This app has no login (see CreateProfileModal: "no login required"), so there is
+// no JWT to identify the caller. The rest of the API already identifies people with
+// a `viewerId` query parameter, so attach it once here rather than at every call
+// site. If real authentication arrives, delete this block - the Authorization
+// header below is already in place for it.
+export const VIEWER_STORAGE_KEY = 'zenve-vet-me';
+const DEFAULT_VIEWER_ID = 1;
+
+export function getViewerId() {
+  try {
+    const saved = localStorage.getItem(VIEWER_STORAGE_KEY);
+    return saved ? Number(saved) : DEFAULT_VIEWER_ID;
+  } catch {
+    return DEFAULT_VIEWER_ID;
+  }
+}
+
 apiClient.interceptors.request.use((config) => {
   const token = getToken();
   if (token) config.headers.Authorization = `Bearer ${token}`;
+
+  // Never override a viewerId a caller set deliberately.
+  if (config.params?.viewerId === undefined) {
+    config.params = { ...(config.params || {}), viewerId: getViewerId() };
+  }
   return config;
 });
 
@@ -65,7 +87,9 @@ export function normalizePage(data, size = 10) {
   const items = data?.content ?? data?.items ?? data?.results ?? data?.data ?? [];
   const page = data?.number ?? data?.page ?? 0;
   const totalPages = data?.totalPages ?? null;
-  const total = data?.totalElements ?? data?.total ?? null;
+  // `totalItems` is this backend's PageResponse field; the other two cover a
+  // Spring Data Page and the plain {total} shape.
+  const total = data?.totalElements ?? data?.totalItems ?? data?.total ?? null;
   let hasMore;
   if (typeof data?.last === 'boolean') hasMore = !data.last;
   else if (totalPages !== null) hasMore = page + 1 < totalPages;

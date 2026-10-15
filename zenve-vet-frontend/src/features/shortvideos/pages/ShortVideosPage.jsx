@@ -109,7 +109,7 @@ export default function ShortVideosPage() {
               <label><select value={region} onChange={(e) => update({ state: e.target.value })}><option value="">All states</option><option value="Kerala">Kerala</option><option value="Maharashtra">Maharashtra</option><option value="Rajasthan">Rajasthan</option><option value="Tamil Nadu">Tamil Nadu</option></select></label>
               <label><select value={caseType} onChange={(e) => update({ caseType: e.target.value })}><option value="">Clinical content</option><option value="Clinical cases">Clinical cases</option><option value="Clinical perspectives">Clinical perspectives</option><option value="Procedures">Procedures</option></select></label>
               {(specialty || region || caseType || q) && <button type="button" className="clearDiscoveryFilters" onClick={() => { setSearchText(''); update({ specialty: '', state: '', caseType: '', q: '' }); }}><Icon name="close" size={16} /> Clear</button>}
-              <span className="discoveryResultCount">{state.items.length} results</span>
+              <span className="discoveryResultCount">{state.total ?? state.items.length} results</span>
             </div>
 
             <VideoFeed

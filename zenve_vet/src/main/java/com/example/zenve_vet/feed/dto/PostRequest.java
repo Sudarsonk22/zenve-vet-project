@@ -11,5 +11,7 @@ public record PostRequest(
         String category,
         @NotBlank @Size(max = 2000) String body,
         String mediaUrl,
-        Boolean consentReviewed) {
+        Boolean consentReviewed,
+        @Size(max = 1000) String takeaways,
+        @Size(max = 60) String topic) {
 }

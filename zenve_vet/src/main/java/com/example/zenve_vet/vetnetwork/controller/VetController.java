@@ -26,10 +26,12 @@ public class VetController {
     public PageResponse<VetResponse> list(@RequestParam(required = false) String search,
                                           @RequestParam(required = false) String specialty,
                                           @RequestParam(required = false) String city,
+                                          @RequestParam(required = false) String state,
+                                          @RequestParam(defaultValue = "false") boolean verifiedOnly,
                                           @RequestParam(defaultValue = "0") int page,
                                           @RequestParam(defaultValue = "12") int size,
                                           @RequestParam(required = false) Long viewerId) {
-        return vetService.list(search, specialty, city, page, size, viewerId);
+        return vetService.list(search, specialty, city, state, verifiedOnly, page, size, viewerId);
     }
 
     @GetMapping("/specialties")

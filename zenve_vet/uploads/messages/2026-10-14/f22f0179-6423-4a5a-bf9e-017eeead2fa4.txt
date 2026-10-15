@@ -1,0 +1,4 @@
+Anaesthetic checklist v3
+1. Patient identity confirmed
+2. Weight re-checked
+3. Airway kit sized

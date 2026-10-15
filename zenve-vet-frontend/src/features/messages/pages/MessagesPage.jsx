@@ -33,7 +33,6 @@ export default function MessagesPage() {
           error={state.convError}
           selectedId={state.selectedId}
           onSelect={state.selectConversation}
-          onCreateProfile={state.createProfileConversation}
           filter={state.filter}
           onFilter={state.setFilter}
           query={state.query}

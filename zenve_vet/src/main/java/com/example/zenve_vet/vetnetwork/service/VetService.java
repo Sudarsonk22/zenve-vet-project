@@ -31,17 +31,18 @@ public class VetService {
         this.followRepository = followRepository;
     }
 
-    public PageResponse<VetResponse> list(String search, String specialty, String city,
-                                          int page, int size, Long viewerId) {
+    public PageResponse<VetResponse> list(String search, String specialty, String city, String state,
+                                          boolean verifiedOnly, int page, int size, Long viewerId) {
         if (page < 0) {
             throw new BadRequestException("Page cannot be negative");
         }
-        if (size < 1 || size > 50) {
-            throw new BadRequestException("Page size must be between 1 and 50");
+        if (size < 1 || size > 100) {
+            throw new BadRequestException("Page size must be between 1 and 100");
         }
 
         Pageable pageable = PageRequest.of(page, size, Sort.by("fullName"));
-        Page<VetProfile> result = vetRepository.search(clean(search), clean(specialty), clean(city), pageable);
+        Page<VetProfile> result = vetRepository.search(
+                clean(search), clean(specialty), clean(city), clean(state), verifiedOnly, pageable);
 
         List<VetResponse> items = result.getContent().stream().map(v -> toResponse(v, viewerId)).toList();
         return new PageResponse<>(items, page, size, result.getTotalElements(), result.getTotalPages());

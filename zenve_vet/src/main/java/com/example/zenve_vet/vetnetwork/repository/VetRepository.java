@@ -23,10 +23,14 @@ public interface VetRepository extends JpaRepository<VetProfile, Long> {
                    or lower(v.city) like lower(concat('%', :search, '%')))
               and (:specialty = '' or v.specialty = :specialty)
               and (:city = '' or v.city = :city)
+              and (:state = '' or v.state = :state)
+              and (:verifiedOnly = false or v.verified = true)
             """)
     Page<VetProfile> search(@Param("search") String search,
                             @Param("specialty") String specialty,
                             @Param("city") String city,
+                            @Param("state") String state,
+                            @Param("verifiedOnly") boolean verifiedOnly,
                             Pageable pageable);
 
     @Query("select distinct v.specialty from VetProfile v order by v.specialty")

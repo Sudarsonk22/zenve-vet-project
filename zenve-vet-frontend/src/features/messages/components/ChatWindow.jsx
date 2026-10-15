@@ -38,7 +38,7 @@ export default function ChatWindow({ state, onBack, onToggleInfo }) {
           <strong>{participant.name || 'Member'}</strong>
           {participant.specialization && <span>{participant.specialization}</span>}
         </div>
-        <button type="button" className="chatDeleteProfile" onClick={() => { const isLocalProfile = participant.id?.startsWith('local-profile-'); if (window.confirm(isLocalProfile ? `Delete ${participant.name}'s profile?` : `Delete this chat with ${participant.name}?`)) state.deleteConversation(conv.id); }}><Icon name="trash" size={16} /> {participant.id?.startsWith('local-profile-') ? 'Delete profile' : 'Delete chat'}</button>
+        <button type="button" className="chatDeleteProfile" onClick={() => { const isLocalProfile = String(participant.id ?? '').startsWith('local-profile-'); if (window.confirm(isLocalProfile ? `Delete ${participant.name}'s profile?` : `Delete this chat with ${participant.name}?`)) state.deleteConversation(conv.id); }}><Icon name="trash" size={16} /> {String(participant.id ?? '').startsWith('local-profile-') ? 'Delete profile' : 'Delete chat'}</button>
         <button type="button" className="zvIconBtn" onClick={state.refreshAll} aria-label="Refresh messages"><Icon name="refresh" size={18} /></button>
         <button type="button" className="zvIconBtn chatInfoBtn" onClick={onToggleInfo} aria-label="Contact details"><Icon name="info" /></button>
       </header>

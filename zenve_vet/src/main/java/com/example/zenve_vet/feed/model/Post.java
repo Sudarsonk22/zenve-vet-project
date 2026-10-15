@@ -35,6 +35,21 @@ public class Post {
     @Column(name = "consent_reviewed", nullable = false)
     private boolean consentReviewed = false;
 
+    /**
+     * The practical "what to take away" lines on a teaching case. Optional - the
+     * search filter "Has takeaways" is exactly a test for this being present.
+     */
+    @Column(length = 1000)
+    private String takeaways;
+
+    /**
+     * Coarse subject tag driving the search chips (Dermatology, Surgery, Livestock,
+     * Equine, Imaging, Nutrition, Wildlife, Preventive). Kept separate from the
+     * author's specialty: a dermatologist can post a nutrition case.
+     */
+    @Column(length = 60)
+    private String topic;
+
     @Column(name = "view_count", nullable = false)
     private int viewCount = 0;
 
@@ -72,6 +87,12 @@ public class Post {
 
     public boolean isConsentReviewed() { return consentReviewed; }
     public void setConsentReviewed(boolean consentReviewed) { this.consentReviewed = consentReviewed; }
+
+    public String getTakeaways() { return takeaways; }
+    public void setTakeaways(String takeaways) { this.takeaways = takeaways; }
+
+    public String getTopic() { return topic; }
+    public void setTopic(String topic) { this.topic = topic; }
 
     public int getViewCount() { return viewCount; }
     public void setViewCount(int viewCount) { this.viewCount = viewCount; }

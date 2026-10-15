@@ -208,32 +208,11 @@ export default function useMessages() {
     [loadConversations, loadMessages],
   );
 
-  const createProfileConversation = useCallback((values) => {
-    const participant = {
-      id: `local-profile-${Date.now()}`,
-      name: values.name.trim(),
-      city: values.city.trim(),
-      location: values.city.trim(),
-      specialization: values.specialization.trim(),
-      about: values.about.trim(),
-      bio: values.about.trim(),
-      avatarUrl: '',
-    };
-    const conversation = { id: `local-conversation-${participant.id}`, participant, preview: '', lastMessageAt: new Date().toISOString(), unreadCount: 0, pinned: false, archived: false };
-    setConversations((current) => [conversation, ...current]);
-    setSelectedId(conversation.id);
-    setMessages([]);
-    setMsgError('');
-    return conversation.id;
-  }, []);
-
   const deleteConversation = useCallback((conversationId) => {
     setConversations((current) => current.filter((conversation) => conversation.id !== conversationId));
     setSelectedId((current) => current === conversationId ? null : current);
     if (selectedRef.current === conversationId) setMessages([]);
   }, []);
-
-  const deleteProfileConversation = deleteConversation;
 
   const togglePin = useCallback(async () => {
     const c = selectedConversation;
@@ -296,7 +275,7 @@ export default function useMessages() {
   return {
     me, meError: '', isMine,
     conversations, convLoading, convError, filter, setFilter, query, setQuery, reloadConversations: loadConversations,
-    selectedId, selectedConversation, selectConversation, openWithUser, createProfileConversation, deleteProfileConversation, deleteConversation,
+    selectedId, selectedConversation, selectConversation, openWithUser, deleteConversation,
     messages, msgLoading, msgError, hasOlder, loadingOlder, loadOlder, reloadMessages: () => loadMessages(selectedId),
     send, sending, sendError, clearSendError: () => setSendError(''),
     actionError, clearActionError: () => setActionError(''),

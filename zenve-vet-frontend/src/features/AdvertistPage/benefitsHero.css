@@ -1,0 +1,79 @@
+.bh-hero {
+  position: relative;
+  min-height: 410px;
+  display: flex;
+  align-items: center;
+  border-radius: 14px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-color: #0a5b43;
+}
+
+.bh-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(6, 70, 52, 0.8) 0%, rgba(6, 70, 52, 0.55) 50%, rgba(6, 70, 52, 0.4) 100%);
+}
+
+.bh-body {
+  position: relative;
+  padding: 0 44px;
+  max-width: 640px;
+  text-align: left;
+  color: #fff;
+}
+
+.bh-kicker {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 1.6px;
+  font-weight: 600;
+  color: #e4bd61;
+  text-transform: uppercase;
+}
+
+.bh-body h1 {
+  font: 500 46px/1.2 Manrope, sans-serif;
+  letter-spacing: -1.5px;
+  margin: 22px 0 22px;
+  color: #fff;
+}
+
+.bh-body p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #f1f5f2;
+  margin: 0 0 28px;
+}
+
+.bh-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  height: 46px;
+  padding: 0 20px;
+  border: 1px solid #e8cc8e;
+  border-radius: 3px;
+  background: #f9edcf;
+  color: #111d18;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.bh-button:hover {
+  background: #f3dfad;
+}
+
+@media (max-width: 700px) {
+  .bh-hero {
+    min-height: 340px;
+  }
+  .bh-body {
+    padding: 0 22px;
+  }
+  .bh-body h1 {
+    font-size: 32px;
+  }
+}

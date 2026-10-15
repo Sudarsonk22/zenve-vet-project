@@ -11,6 +11,8 @@ public record PostResponse(
         String body,
         String mediaUrl,
         boolean consentReviewed,
+        String takeaways,
+        String topic,
         AuthorSummary author,
         int viewCount,
         int appreciationCount,
